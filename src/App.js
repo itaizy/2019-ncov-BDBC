@@ -6,6 +6,7 @@ import relativeTime from 'dayjs/plugin/relativeTime'
 import { Carousel, WingBlank } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
+import policy from './data/zc_new'
 
 // import { Fab, Action } from 'react-tiny-fab';
 // import 'react-tiny-fab/dist/styles.css';
@@ -13,6 +14,7 @@ import provinces from './data/area'
 import { Container, Button, Link } from 'react-floating-action-button'
 
 import Tag from './Tag'
+import Person from './person'
 
 import './App.css'
 import axios from 'axios'
@@ -68,6 +70,45 @@ function News ({ province }) {
   )
 }
 
+function OnePolicy ({ title, content, url, time, publisher, location }) {
+  return (
+    <div className="new">
+      <div className="new-date">
+        <div className="relative">
+            {location}
+        </div>
+        {time}
+      </div>
+      <a className="title" href={url}>{ title }</a>
+      <div className="summary">{ content.slice(0, 100) }...</div>
+      <div className="relative-right">
+          {publisher}
+      </div>
+    </div>
+  )
+}
+
+function Policys () {
+  const [len, setLen] = useState(8)
+  // const [news, setNews] = useState([])
+
+  return (
+    <div className="card">
+      <h2 id="Policy">政策扶持</h2>
+      {
+        policy
+        .slice(0, len)
+        .map(n => {
+        console.log(n);
+        return (<OnePolicy {...n} key={n.id}/>)
+      })
+        
+      }
+      <div className="more" onClick={() => { setLen() }}>点击查看全部动态</div>
+    </div>
+  )
+}
+
 function Summary () {
   return (
     <div className="card info">
@@ -88,7 +129,7 @@ function Resource () {
   return (
     <div className="card info">
       <h2 id="Resource">抗疫资源</h2>
-      <li><a href="http://www.to2025.com/">全国各省市口罩生产商联系方式</a> <h3>关注公众号"工业汇"查询</h3></li>
+      <li><a href="https://mp.weixin.qq.com/s/IQaSZxNirg-mIXCNTG-lTw">全国各省市口罩生产商联系方式</a></li>
     </div>
   )
 }
@@ -97,20 +138,22 @@ function About () {
   return (
     <div className="card info">
       <h2 id="About">关于我们</h2>
-      <li><a href="http://bdbc.buaa.edu.cn/">ACTBIGDATA, BDBC</a></li>
+      <li><a href="http://bdbc.buaa.edu.cn/">北京市大数据科学与脑机智能高精尖创新中心(BDBC)</a></li>
+      <a href="http://act.buaa.edu.cn/lijx/"><Person Icon="http://act.buaa.edu.cn/lijx/pics/lijx.JPG" Name="李建欣" Title="教授" Organization="计算机学院"/></a>
+      <a href="https://rse.buaa.edu.cn/plus/view.php?aid=117"><Person Icon="https://rse.buaa.edu.cn/uploads/150919/1-1509191GT43J.jpg" Name="李大庆" Title="研究员" Organization="可靠性与系统工程学院"/></a>
     </div>
   )
 }
 
 function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCount, name }) {
   return (
-    <div className="card">
-      <h2 id="Stas">
+    <div>
+      <h3 id="Stas">
         地域 {name ? `: ${name}` : ': 全国'}
         <span className="due">
           截止到: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
         </span>
-      </h2>
+      </h3>
       <div className="row">
         <Tag number={confirmedCount} className="numberconfirmed">
           确诊
@@ -204,15 +247,17 @@ function Area ({ area, onChange }) {
 function Header ({ province }) {
   return (
     <header>
-      <div className="bg"></div>
-      <h1>
+      <img src={require("./noprovince-small.jpg")} width="100%"/>
+
+      {/* <div className="bg"></div> */}
+      {/* <h1> */}
         {/* <small>新冠</small> */}
-        <br />
-        新冠疫情动态 · { province ? province.name : '全国' }
-      </h1>
-      <div>
-        <a href="http://bdbc.buaa.edu.cn/">By BDBC</a>
-      </div>
+        {/* <br /> */}
+        {/* 新冠疫情动态 · { province ? province.name : '全国' } */}
+      {/* </h1> */}
+      {/* <div> */}
+        {/* <a href="http://bdbc.buaa.edu.cn/">By BDBC</a> */}
+      {/* </div> */}
       { /* <i>By ACTBigData in BDBC</i> */}
     </header>
   )
@@ -261,45 +306,47 @@ function App () {
         style = {{zIndex: 100}}
       >
             <Link href="#Incr" >趋势</Link>
-            <Link href="#Stas" >统计</Link>
             <Link href="#Map"  >地图</Link>
             <Link href="#News" >动态</Link>
-            <Link href="#Summary" >汇总</Link>
+            <Link href="#Summary" >讯息</Link>
+            <Link href="#Policy" >政策</Link>
             <Link href="#Resource" >资源</Link>
-            <Link href="#About" >About</Link>
+            <Link href="#About" >关于</Link>
             <Button
                 rotate={true}
                  >导航</Button>
         </Container>
       <Header province={province} />
       <StatIncr modifyTime={all.modifyTime}/>
-      <WingBlank>
-        <Carousel
+      {/* <WingBlank> */}
+        {/* <Carousel
             autoplay={false}
             infinite
-        >
+        > */}
             {all.dailyPics.map(n => (
-                <img src={n}
+              <div>
+                <img src={require('./images/' + n.split('/')[n.split('/').length - 1])}
                      alt=""
-                     style={{ width: '100%', verticalAlign: 'top' }}
+                    //  style={{ width: '100%', verticalAlign: 'top' }}
+                     style={{ width: '100%'}}
                      onLoad={() => {
                          // fire window resize event to change height
                          window.dispatchEvent(new Event('resize'));
-                     }}/>))}
-        </Carousel>
-      </WingBlank>
-      <Stat { ...overall } name={province && province.name} modifyTime={all.modifyTime} />
+                     }}/>
+                     <WingBlank /></div>))}
+        {/* </Carousel> */}
+      {/* </WingBlank> */}
+      
       <div className="card">
-        <h2 id="Map">疫情地图 { province ? `· ${province.name}` : false }
-              <div className="tip">
-                点击省市查看详情
-              </div>
+        <h2 id="Map">疫情地图 { province ? `· ${province.name}` : "(点击省市查看详情)" }
         {
           province ? <small
             onClick={() => setProvince(null)}
           >返回全国</small> : null
         }
         </h2>
+        {/* <h3>点击省市查看详情</h3> */}
+        <Stat { ...overall } name={province && province.name} modifyTime={all.modifyTime} />
         <Suspense fallback={<div className="loading">地图正在加载中...</div>}>
           <Map province={province} data={data} onClick={name => {
             const p = provincesByName[name]
@@ -320,8 +367,9 @@ function App () {
         <h2>患者小区查询</h2>
 
       </div>
-      <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px" frameborder="0"></iframe>
+      <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px" frameBorder="0"></iframe>
       <News province={province} />
+      <Policys />
       <Summary />
       <Resource />
       <About />

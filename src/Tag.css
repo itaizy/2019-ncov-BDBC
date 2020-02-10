@@ -32,3 +32,29 @@
   font-size: 1.3rem;
   font-weight: 600;
 }
+
+.person{
+  border-radius: 4px;
+  /* padding: 5px 10px; */
+  background-color: #f3f3f3;
+  display: inline-block;
+  text-align: center;
+  color: #888;
+  /* flex: 1; */
+  /* margin: 5px; */
+}
+
+.left {
+  color: black;
+  width: 40%;
+  float: left;
+  font-size: 1.2rem;
+}
+
+.right {
+  color: black;
+  text-align: left;
+  width: 50%;
+  float: right;
+  font-size: 1rem;
+}
