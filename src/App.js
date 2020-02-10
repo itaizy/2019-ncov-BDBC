@@ -285,7 +285,7 @@ function App () {
   useEffect(() => {
     if (province) {
       // window.document.title = `新冠疫情实时地图 | ${province.name}`
-      window.document.title = `新冠疫情实时地图`
+      window.document.title = `新冠疫情实时数据导航`
     }
   }, [province])
 
