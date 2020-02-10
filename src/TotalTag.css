@@ -1,0 +1,59 @@
+.totaltag {
+  border-radius: 4px;
+  padding: 3px 5px;
+  background-color: #f3f3f3;
+  display: inline-block;
+  font-size: .8rem;
+  text-align: center;
+  color: #888;
+  flex: 1;
+  margin: 5px;
+}
+
+.totaltag .numberconfirmed {
+  color: #FF0000;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.totaltag .number {
+  color: #f60;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.totaltag .dead {
+  color: #888;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.totaltag .numbercured {
+  color: #2E8B57;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.totaltag .totalnumberconfirmed {
+  color: #FF0000;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.totaltag .totalnumber {
+  color: #f60;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.totaltag .totaldead {
+  color: #888;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.totaltag .totalnumbercured {
+  color: #2E8B57;
+  font-size: 1rem;
+  font-weight: 600;
+}

@@ -16,6 +16,7 @@ import Tag from './Tag'
 
 import './App.css'
 import axios from 'axios'
+import TotalTag from "./TotalTag";
 
 dayjs.extend(relativeTime)
 
@@ -105,9 +106,9 @@ function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCou
   return (
     <div className="card">
       <h2 id="Stas">
-        统计 {name ? `· ${name}` : '· 全国'}
+        地域 {name ? `: ${name}` : ': 全国'}
         <span className="due">
-          截止时间: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
+          截止到: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
         </span>
       </h2>
       <div className="row">
@@ -132,27 +133,27 @@ function StatIncr ({ modifyTime}) {
   return (
     <div className="card">
       <h2 id="Incr">
-        全国新增
+        实时数据
         <span className="due">
           截止时间: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
         </span>
       </h2>
       <div className="row">
-        <Tag number={all.confirmedIncr} className="numberconfirmed">
+        <TotalTag number={all.confirmedIncr} total={all.confirmedCount} className="numberconfirmed">
           确诊
-        </Tag>
-        <Tag number={all.suspectedIncr || '-'} className="number">
+        </TotalTag>
+        <TotalTag number={all.suspectedIncr || '-'}  total={all.suspectedCount} className="number">
           疑似
-        </Tag>
-        <Tag number={all.seriousIncr} className="dead">
+        </TotalTag>
+        <TotalTag number={all.seriousIncr} total={all.seriousCount} className="dead">
           重症
-        </Tag>
-        <Tag number={all.deadIncr} className="dead">
+        </TotalTag>
+        <TotalTag number={all.deadIncr} total={all.deadCount} className="dead">
           死亡
-        </Tag>
-        <Tag number={all.curedIncr} className="numbercured">
+        </TotalTag>
+        <TotalTag number={all.curedIncr} total={all.deadCount} className="numbercured">
           治愈
-        </Tag>
+        </TotalTag>
       </div>
     </div>
   )
@@ -210,7 +211,7 @@ function Header ({ province }) {
         新冠疫情动态 · { province ? province.name : '全国' }
       </h1>
       <div>
-        <a href="http://bdbc.buaa.edu.cn/">By ACTBIGDATA, BDBC</a>
+        <a href="http://bdbc.buaa.edu.cn/">By BDBC</a>
       </div>
       { /* <i>By ACTBigData in BDBC</i> */}
     </header>
@@ -256,7 +257,9 @@ function App () {
 
   return (
     <div>
-      <Container>
+      <Container
+        style = {{zIndex: 100}}
+      >
             <Link href="#Incr" >趋势</Link>
             <Link href="#Stas" >统计</Link>
             <Link href="#Map"  >地图</Link>
@@ -315,7 +318,7 @@ function App () {
       </div>
       <div className="card">
         <h2>患者小区查询</h2>
-      
+
       </div>
       <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px" frameborder="0"></iframe>
       <News province={province} />
