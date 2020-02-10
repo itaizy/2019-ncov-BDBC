@@ -3,7 +3,7 @@ import keyBy from 'lodash.keyby'
 import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import relativeTime from 'dayjs/plugin/relativeTime'
-
+import { Carousel, WingBlank } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
 
@@ -244,10 +244,22 @@ function App () {
     <div>
       <Header province={province} />
       <StatIncr modifyTime={all.modifyTime}/>
+      <WingBlank>
+        <Carousel
+            autoplay={false}
+            infinite
+        >
+            {all.dailyPics.map(n => (
+                <img src={n}
+                     alt=""
+                     style={{ width: '100%', verticalAlign: 'top' }}
+                     onLoad={() => {
+                         // fire window resize event to change height
+                         window.dispatchEvent(new Event('resize'));
+                     }}/>))}
+        </Carousel>
+      </WingBlank>
       <Stat { ...overall } name={province && province.name} modifyTime={all.modifyTime} />
-      {
-        all.dailyPics.map(n => <img src={n} width="100%"></img>)
-      }
       <div className="card">
         <h2>疫情地图 { province ? `· ${province.name}` : false }
               <div className="tip">
