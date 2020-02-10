@@ -105,7 +105,7 @@ function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCou
   return (
     <div className="card">
       <h2 id="Stas">
-        统计 {name ? `· ${name}` : false}
+        统计 {name ? `· ${name}` : '· 全国'}
         <span className="due">
           截止时间: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
         </span>
@@ -268,7 +268,6 @@ function App () {
                 rotate={true}
                  >导航</Button>
         </Container>
-    
       <Header province={province} />
       <StatIncr modifyTime={all.modifyTime}/>
       {
