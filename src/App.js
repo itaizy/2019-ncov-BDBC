@@ -7,6 +7,11 @@ import { Carousel, WingBlank } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
 
+// import { Fab, Action } from 'react-tiny-fab';
+// import 'react-tiny-fab/dist/styles.css';
+// import React from 'react'
+import { Container, Button, Link } from 'react-floating-action-button'
+
 import Tag from './Tag'
 
 import './App.css'
@@ -50,7 +55,7 @@ function News ({ province }) {
 
   return (
     <div className="card">
-      <h2>实时动态</h2>
+      <h2 id="News">实时动态</h2>
       {
         news
           .filter(n => province ? province.provinceShortName === (n.provinceName && n.provinceName.slice(0, 2)) : true)
@@ -65,7 +70,7 @@ function News ({ province }) {
 function Summary () {
   return (
     <div className="card info">
-      <h2>信息汇总</h2>
+      <h2 id="Summary">信息汇总</h2>
       <li>
         <a href="https://m.yangshipin.cn/static/2020/c0126.html">疫情24小时 | 与疫情赛跑</a>
       </li>
@@ -81,8 +86,17 @@ function Summary () {
 function Resource () {
   return (
     <div className="card info">
-      <h2>抗疫资源</h2>
+      <h2 id="Resource">抗疫资源</h2>
       <li><a href="http://www.to2025.com/">全国各省市口罩生产商联系方式</a> <h3>关注公众号"工业汇"查询</h3></li>
+    </div>
+  )
+}
+
+function About () {
+  return (
+    <div className="card info">
+      <h2 id="About">关于我们</h2>
+      <li><a href="http://bdbc.buaa.edu.cn/">ACTBIGDATA, BDBC</a></li>
     </div>
   )
 }
@@ -90,8 +104,8 @@ function Resource () {
 function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCount, name }) {
   return (
     <div className="card">
-      <h2>
-        统计 {name ? `· ${name}` : false}
+      <h2 id="Stas">
+        统计 {name ? `· ${name}` : '· 全国'}
         <span className="due">
           截止时间: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
         </span>
@@ -117,7 +131,7 @@ function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCou
 function StatIncr ({ modifyTime}) {
   return (
     <div className="card">
-      <h2>
+      <h2 id="Incr">
         全国新增
         <span className="due">
           截止时间: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
@@ -242,6 +256,18 @@ function App () {
 
   return (
     <div>
+      <Container>
+            <Link href="#Incr" >趋势</Link>
+            <Link href="#Stas" >统计</Link>
+            <Link href="#Map"  >地图</Link>
+            <Link href="#News" >动态</Link>
+            <Link href="#Summary" >汇总</Link>
+            <Link href="#Resource" >资源</Link>
+            <Link href="#About" >About</Link>
+            <Button
+                rotate={true}
+                 >导航</Button>
+        </Container>
       <Header province={province} />
       <StatIncr modifyTime={all.modifyTime}/>
       <WingBlank>
@@ -261,7 +287,7 @@ function App () {
       </WingBlank>
       <Stat { ...overall } name={province && province.name} modifyTime={all.modifyTime} />
       <div className="card">
-        <h2>疫情地图 { province ? `· ${province.name}` : false }
+        <h2 id="Map">疫情地图 { province ? `· ${province.name}` : false }
               <div className="tip">
                 点击省市查看详情
               </div>
@@ -289,11 +315,13 @@ function App () {
       </div>
       <div className="card">
         <h2>患者小区查询</h2>
-        <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px"></iframe>
+      
       </div>
+      <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px" frameborder="0"></iframe>
       <News province={province} />
       <Summary />
       <Resource />
+      <About />
       <Fallback />
     </div>
   );
