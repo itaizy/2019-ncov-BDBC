@@ -195,7 +195,7 @@ function StatIncr ({ modifyTime}) {
         <TotalTag number={all.deadIncr} total={all.deadCount} className="dead">
           死亡
         </TotalTag>
-        <TotalTag number={all.curedIncr} total={all.deadCount} className="numbercured">
+        <TotalTag number={all.curedIncr} total={all.curedIncr} className="numbercured">
           治愈
         </TotalTag>
       </div>
