@@ -139,8 +139,9 @@ function About () {
     <div className="card info">
       <h2 id="About">关于我们</h2>
       <li><a href="http://bdbc.buaa.edu.cn/">北京市大数据科学与脑机智能高精尖创新中心(BDBC)</a></li>
-      <a href="http://act.buaa.edu.cn/lijx/"><Person Icon="http://act.buaa.edu.cn/lijx/pics/lijx.JPG" Name="李建欣" Title="教授" Organization="计算机学院"/></a>
-      <a href="https://rse.buaa.edu.cn/plus/view.php?aid=117"><Person Icon="https://rse.buaa.edu.cn/uploads/150919/1-1509191GT43J.jpg" Name="李大庆" Title="研究员" Organization="可靠性与系统工程学院"/></a>
+      <li><a href="https://rse.buaa.edu.cn/plus/view.php?aid=117">北航可靠性与系统工程学院李大庆课题组</a></li>
+      {/* <a href="http://act.buaa.edu.cn/lijx/"><Person Icon="http://act.buaa.edu.cn/lijx/pics/lijx.JPG" Name="李建欣" Title="教授" Organization="计算机学院"/></a> */}
+      {/* <a href="https://rse.buaa.edu.cn/plus/view.php?aid=117"><Person Icon="https://rse.buaa.edu.cn/uploads/150919/1-1509191GT43J.jpg" Name="李大庆" Title="研究员" Organization="可靠性与系统工程学院"/></a> */}
     </div>
   )
 }
