@@ -9,8 +9,26 @@
   margin: 5px;
 }
 
+.numberconfirmed {
+  color: #FF0000;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
 .number {
   color: #f60;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.dead {
+  color: #888;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.numbercured {
+  color: #2E8B57;
   font-size: 1.3rem;
   font-weight: 600;
 }

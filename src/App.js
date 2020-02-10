@@ -78,6 +78,15 @@ function Summary () {
   )
 }
 
+function Resource () {
+  return (
+    <div className="card info">
+      <h2>抗疫资源</h2>
+      <li><a href="http://www.to2025.com/">全国各省市口罩生产商联系方式</a> <h3>关注公众号"工业汇"查询</h3></li>
+    </div>
+  )
+}
+
 function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCount, name }) {
   return (
     <div className="card">
@@ -88,16 +97,46 @@ function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCou
         </span>
       </h2>
       <div className="row">
-        <Tag number={confirmedCount}>
+        <Tag number={confirmedCount} className="numberconfirmed">
           确诊
         </Tag>
-        <Tag number={suspectedCount || '-'}>
+        <Tag number={suspectedCount || '-'} className="number">
           疑似
         </Tag>
-        <Tag number={deadCount}>
+        <Tag number={deadCount} className="dead">
           死亡
         </Tag>
-        <Tag number={curedCount}>
+        <Tag number={curedCount} className="numbercured">
+          治愈
+        </Tag>
+      </div>
+    </div>
+  )
+}
+
+function StatIncr ({ modifyTime}) {
+  return (
+    <div className="card">
+      <h2>
+        全国新增
+        <span className="due">
+          截止时间: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
+        </span>
+      </h2>
+      <div className="row">
+        <Tag number={all.confirmedIncr} className="numberconfirmed">
+          确诊
+        </Tag>
+        <Tag number={all.suspectedIncr || '-'} className="number">
+          疑似
+        </Tag>
+        <Tag number={all.seriousIncr} className="dead">
+          重症
+        </Tag>
+        <Tag number={all.deadIncr} className="dead">
+          死亡
+        </Tag>
+        <Tag number={all.curedIncr} className="numbercured">
           治愈
         </Tag>
       </div>
@@ -204,7 +243,11 @@ function App () {
   return (
     <div>
       <Header province={province} />
+      <StatIncr modifyTime={all.modifyTime}/>
       <Stat { ...overall } name={province && province.name} modifyTime={all.modifyTime} />
+      {
+        all.dailyPics.map(n => <img src={n} width="100%"></img>)
+      }
       <div className="card">
         <h2>疫情地图 { province ? `· ${province.name}` : false }
               <div className="tip">
@@ -232,8 +275,13 @@ function App () {
         </Suspense>
         <Area area={area} onChange={setProvince} />
       </div>
+      <div className="card">
+        <h2>患者小区查询</h2>
+        <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px"></iframe>
+      </div>
       <News province={province} />
       <Summary />
+      <Resource />
       <Fallback />
     </div>
   );
