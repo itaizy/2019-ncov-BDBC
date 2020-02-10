@@ -21,8 +21,10 @@ for img_url in user_dic['dailyPics']:
         for line in range(im.size[1]):
             if im_array[row, line][0] > 240 and im_array[row, line][1] > 240 and im_array[row, line][2] > 240:
                 im_array[row, line] = (255, 255, 255)
-    im.save()
+    im.save(filename)
 val = os.system('cd .. && npm install')
-print(安装依赖 + str(val))
+print('安装依赖' + str(val))
 val = os.system('cd .. && npm run build')
-print(build complete.)
+print('build complete' + str(val))
+val = os.system('cp ../build/index.html ../build/ncov/')
+print('Done.' + str(val))
