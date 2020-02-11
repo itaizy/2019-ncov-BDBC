@@ -258,7 +258,7 @@ function Area ({ area, onChange }) {
 function Header ({ province }) {
   return (
     <header>
-      <img src={require("./noprovince-small.jpg")} width="100%"/>
+      <img src={require("./noprovince-small2.jpg")} width="100%"/>
 
       {/* <div className="bg"></div> */}
       {/* <h1> */}
