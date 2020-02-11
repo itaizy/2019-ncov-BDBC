@@ -41,7 +41,7 @@ export default function Index(props) {
         ["地图", "#Map"],
         ["定位", "#local"],
         ["预测", "#Predict"],
-        ["同程", "#Trip"],
+        ["同乘", "#Trip"],
         ["动态", "#News"],
         ["讯息", "#Summary"],
         ["政策", "#Policy"],
