@@ -111,7 +111,7 @@ function Summary () {
   return (
     <div className="card info">
       <h2 id="Summary">信息汇总</h2>
-      <li><a href="http://2019ncov.nosugartech.com/">确诊患者同行查询工具</a></li>
+      <li id="Trip"><a href="http://2019ncov.nosugartech.com/">确诊患者同行查询工具</a></li>
       <li>
         <a href="https://m.yangshipin.cn/static/2020/c0126.html">疫情24小时 | 与疫情赛跑</a>
       </li>
@@ -319,6 +319,8 @@ function App () {
       >
             <Link href="#Incr" >趋势</Link>
             <Link href="#Map"  >地图</Link>
+            <Link href="#local" >定位</Link>
+            <Link href="#Trip" >同程</Link>
             <Link href="#News" >动态</Link>
             <Link href="#Summary" >讯息</Link>
             <Link href="#Policy" >政策</Link>
@@ -376,7 +378,7 @@ function App () {
         <Area area={area} onChange={setProvince} />
       </div>
       <div className="card">
-        <h2>患者小区查询</h2>
+        <h2 id="local">患者小区查询</h2>
 
       </div>
       <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px" frameBorder="0"></iframe>
