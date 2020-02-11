@@ -231,7 +231,8 @@ function Area ({ area, onChange }) {
         if (x.name) {
           onChange(x)
           // window.location.href = window.location.href + "#Map"
-          setTimeout('window.location="#Map"',300)
+          // setTimeout('window.location="#Map"',300)
+          document.getElementById('Map').scrollIntoView()
         }
       }}>
         <div className={`area ${x.name ? 'active' : ''}`}>
@@ -337,8 +338,7 @@ function App () {
         {/* </Carousel> */}
       {/* </WingBlank> */}
       
-      <div id="Map"></div>
-      <div className="card">
+      <div className="card" id="Map">
         <h2>疫情地图 { province ? `· ${province.name}` : "(点击省市查看详情)" }
         {
           province ? <small
