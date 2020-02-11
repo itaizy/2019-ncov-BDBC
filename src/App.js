@@ -7,6 +7,7 @@ import { Carousel, WingBlank, List } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
 import policy from './data/zc_new'
+import NavFab from "./component/NavFab"
 
 // import Carousel from 'antd-mobile/lib/carousel';  // 加载 JS
 import 'antd-mobile/lib/carousel/style/css';        // 加载 CSS
@@ -18,7 +19,6 @@ import 'antd-mobile/lib/list/style/css';        // 加载 CSS
 // import { Fab, Action } from 'react-tiny-fab';
 // import 'react-tiny-fab/dist/styles.css';
 // import React from 'react'
-import { Container, Button, Link, darkColors, lightColors } from 'react-floating-action-button'
 
 import Tag from './Tag'
 import Person from './person'
@@ -395,22 +395,7 @@ function App () {
       <About />
       <Callback />
       <Fallback />
-      <Container id="initalButtion">
-            <Link href="#Incr" >趋势</Link>
-            <Link href="#Map"  >地图</Link>
-            <Link href="#local" >定位</Link>
-            <Link href="#Trip" >同程</Link>
-            <Link href="#News" >动态</Link>
-            <Link href="#Summary" >讯息</Link>
-            <Link href="#Policy" >政策</Link>
-            <Link href="#Resource" >资源</Link>
-            <Link href="#About" >关于</Link>
-            <Button
-                rotate={true}
-                clicked={true}
-                styles={{backgroundColor: darkColors.green, color: lightColors.white}}
-                 >导航</Button>
-        </Container>
+      <NavFab/>
     </div>
   );
 }
