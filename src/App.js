@@ -337,7 +337,8 @@ function App () {
         {/* </Carousel> */}
       {/* </WingBlank> */}
       
-      <div className="card" id="Map">
+      <div id="Map"></div>
+      <div className="card">
         <h2>疫情地图 { province ? `· ${province.name}` : "(点击省市查看详情)" }
         {
           province ? <small
