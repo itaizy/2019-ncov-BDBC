@@ -151,3 +151,7 @@ h2 small {
 h3 {
   color: red
 }
+
+.my-list .spe .am-list-extra {
+  flex-basis: initial;
+}

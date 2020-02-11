@@ -1,17 +1,24 @@
-import React, { useState, Suspense, useEffect } from 'react'
+import React, { useState, Suspense, useEffect, Component  } from 'react'
 import keyBy from 'lodash.keyby'
 import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import relativeTime from 'dayjs/plugin/relativeTime'
-import { Carousel, WingBlank } from 'antd-mobile';
+import { Carousel, WingBlank, List } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
 import policy from './data/zc_new'
 
+// import Carousel from 'antd-mobile/lib/carousel';  // 加载 JS
+import 'antd-mobile/lib/carousel/style/css';        // 加载 CSS
+// import WingBlank from 'antd-mobile/lib/wing-blank';  // 加载 JS
+import 'antd-mobile/lib/wing-blank/style/css';        // 加载 CSS
+// import List from 'antd-mobile/lib/list';  // 加载 JS
+import 'antd-mobile/lib/list/style/css';        // 加载 CSS
+
 // import { Fab, Action } from 'react-tiny-fab';
 // import 'react-tiny-fab/dist/styles.css';
 // import React from 'react'
-import { Container, Button, Link } from 'react-floating-action-button'
+import { Container, Button, Link, darkColors, lightColors } from 'react-floating-action-button'
 
 import Tag from './Tag'
 import Person from './person'
@@ -19,6 +26,7 @@ import Person from './person'
 import './App.css'
 import axios from 'axios'
 import TotalTag from "./TotalTag";
+import { green, red } from '_ansi-colors@3.2.4@ansi-colors'
 
 dayjs.extend(relativeTime)
 
@@ -26,6 +34,9 @@ const Map = React.lazy(() => import('./Map'))
 
 const provincesByName = keyBy(provinces, 'name')
 const provincesByPinyin = keyBy(provinces, 'pinyin')
+
+const Item = List.Item;
+const Brief = Item.Brief;
 
 const fetcher = (url) => axios(url).then(data => {
   return data.data.data
@@ -99,8 +110,6 @@ function Policys () {
         policy
         .slice(0, len)
         .map(n => <OnePolicy {...n} key={n.index}/>)
-      })
-        
       }
       <div className="more" onClick={() => { setLen() }}>点击查看全部动态</div>
     </div>
@@ -109,19 +118,21 @@ function Policys () {
 
 function Summary () {
   return (
+    <div>
     <div className="card info">
-      <h2 id="Summary">信息汇总</h2>
-      <li id="Trip"><a href="http://2019ncov.nosugartech.com/">确诊患者同行查询工具</a></li>
-      <li>
-        <a href="https://m.yangshipin.cn/static/2020/c0126.html">疫情24小时 | 与疫情赛跑</a>
-      </li>
-      <li><a href="https://news.qq.com/zt2020/page/feiyan.htm">腾讯新闻新冠疫情实时动态</a></li>
-      <li><a href="https://3g.dxy.cn/newh5/view/pneumonia">丁香园新冠疫情实时动态</a></li>
-      <li><a href="https://vp.fact.qq.com/home">新型冠状病毒实时辟谣</a></li>
-      <li><a href="https://promo.guahao.com/topic/pneumonia">微医抗击疫情实时救助</a></li>
-      <li><a href="http://www.ncov-report.com/">疫情评估与预测报告-北航</a></li>
-      <li><a href="http://ncov.deepeye.tech/">疫情可视化分析-清华</a></li>
-      <li><a href="http://vis.pku.edu.cn/ncov/">疫情可视化分析-北大</a></li>
+      <h2 id="Summary">资讯汇总</h2>
+      <List>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Search.png')} onClick={() => {window.location.href="http://2019ncov.nosugartech.com/"}}>确诊患者同行查询工具</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Time.png')} onClick={() => {window.location.href="http://2019ncov.nosugartech.com/https://m.yangshipin.cn/static/2020/c0126.html"}}>疫情24小时 | 与疫情赛跑</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tencent.png')} onClick={() => {window.location.href="https://news.qq.com/zt2020/page/feiyan.htm"}}>腾讯新闻新冠疫情实时动态</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Ding.png')} onClick={() => {window.location.href="https://3g.dxy.cn/newh5/view/pneumonia"}}>丁香园新冠疫情实时动态</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Fake.png')} onClick={() => {window.location.href="https://vp.fact.qq.com/home"}}>新型冠状病毒实时辟谣</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Help.png')} onClick={() => {window.location.href="https://promo.guahao.com/topic/pneumonia"}}>微医抗击疫情实时救助</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/bh.jpg')} onClick={() => {window.location.href="http://www.ncov-report.com/"}}>疫情评估与预测报告-北航</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/pku.jpg')} onClick={() => {window.location.href="http://ncov.deepeye.tech/"}}>疫情可视化分析-清华</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/tinghua.jpg')} onClick={() => {window.location.href="http://vis.pku.edu.cn/ncov/"}}>疫情可视化分析-北大</Item>
+      </List>
+    </div>
     </div>
   )
 }
@@ -130,7 +141,9 @@ function Resource () {
   return (
     <div className="card info">
       <h2 id="Resource">抗疫资源</h2>
-      <li><a href="https://mp.weixin.qq.com/s/IQaSZxNirg-mIXCNTG-lTw">全国各省市口罩生产商联系方式</a></li>
+      <List>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tel.png')} onClick={() => {window.location.href="https://mp.weixin.qq.com/s/IQaSZxNirg-mIXCNTG-lTw"}}>全国各省市口罩生产商联系方式</Item>
+      </List>
     </div>
   )
 }
@@ -139,8 +152,12 @@ function About () {
   return (
     <div className="card info">
       <h2 id="About">关于我们</h2>
-      <li><a href="http://bdbc.buaa.edu.cn/">北京市大数据科学与脑机智能高精尖创新中心(BDBC)</a></li>
-      <li><a href="https://rse.buaa.edu.cn/plus/view.php?aid=117">北航可靠性与系统工程学院李大庆课题组</a></li>
+      <List>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/bdbc.png')} multipleLine={true} wrap={true} onClick={() => {window.location.href="http://bdbc.buaa.edu.cn/"}}>北京市大数据科学与脑机智能高精尖创新中心(BDBC)</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/DQ.png')} wrap={true}  onClick={() => {window.location.href="https://rse.buaa.edu.cn/plus/view.php?aid=117"}}>北航可靠性与系统工程学院李大庆课题组</Item>
+      </List>
+      {/* <li><a href="http://bdbc.buaa.edu.cn/">北京市大数据科学与脑机智能高精尖创新中心(BDBC)</a></li> */}
+      {/* <li><a href="https://rse.buaa.edu.cn/plus/view.php?aid=117">北航可靠性与系统工程学院李大庆课题组</a></li> */}
       {/* <a href="http://act.buaa.edu.cn/lijx/"><Person Icon="http://act.buaa.edu.cn/lijx/pics/lijx.JPG" Name="李建欣" Title="教授" Organization="计算机学院"/></a> */}
       {/* <a href="https://rse.buaa.edu.cn/plus/view.php?aid=117"><Person Icon="https://rse.buaa.edu.cn/uploads/150919/1-1509191GT43J.jpg" Name="李大庆" Title="研究员" Organization="可靠性与系统工程学院"/></a> */}
     </div>
@@ -151,7 +168,10 @@ function Callback () {
   return (
     <div className="card info">
       <h2>意见反馈</h2>
-      <li><a href="mailto:itaizy@163.com;taizy@act.buaa.edu.cn;yusc@act.buaa.edu.cn">发送邮件</a></li>
+      <List>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Mail.png')} onClick={() => {window.location.href="mailto:itaizy@163.com;taizy@act.buaa.edu.cn;yusc@act.buaa.edu.cn"}}>发送邮件</Item>
+      </List>
+      {/* <li><a href="mailto:itaizy@163.com;taizy@act.buaa.edu.cn;yusc@act.buaa.edu.cn">发送邮件</a></li> */}
     </div>
   )
 }
@@ -365,8 +385,7 @@ function App () {
         <Area area={area} onChange={setProvince} />
       </div>
       <div className="card">
-        <h2 id="local">患者小区查询</h2>
-
+        <h2 id="local">周边疫情</h2>
       </div>
       <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px" frameBorder="0"></iframe>
       <News province={province} />
@@ -376,9 +395,7 @@ function App () {
       <About />
       <Callback />
       <Fallback />
-      <Container
-        style = {{zIndex: 100}}
-      >
+      <Container id="initalButtion">
             <Link href="#Incr" >趋势</Link>
             <Link href="#Map"  >地图</Link>
             <Link href="#local" >定位</Link>
@@ -390,6 +407,8 @@ function App () {
             <Link href="#About" >关于</Link>
             <Button
                 rotate={true}
+                clicked={true}
+                styles={{backgroundColor: darkColors.green, color: lightColors.white}}
                  >导航</Button>
         </Container>
     </div>
