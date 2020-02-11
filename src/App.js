@@ -124,13 +124,14 @@ function Summary () {
     <div className="card info">
       <h2 id="Summary">资讯汇总</h2>
       <List>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Search.png')} onClick={() => {window.location.href="http://2019ncov.nosugartech.com/"}}>确诊患者同行查询工具</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Search.png')} onClick={() => {window.location.href="http://2019ncov.nosugartech.com/"}}>同乘 | 确诊患者同行查询工具</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Fake.png')} onClick={() => {window.location.href="https://vp.fact.qq.com/home"}}>辟谣 | 新型冠状病毒实时辟谣</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Help.png')} onClick={() => {window.location.href="https://promo.guahao.com/topic/pneumonia"}}>救助 | 微医抗击疫情实时救助</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/bh.jpg')} onClick={() => {window.location.href="http://www.ncov-report.com/"}}>预测 | 疫情评估与预测报告-北航</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Time.png')} onClick={() => {window.location.href="http://2019ncov.nosugartech.com/https://m.yangshipin.cn/static/2020/c0126.html"}}>疫情24小时 | 与疫情赛跑</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tencent.png')} onClick={() => {window.location.href="https://news.qq.com/zt2020/page/feiyan.htm"}}>腾讯新闻新冠疫情实时动态</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Ding.png')} onClick={() => {window.location.href="https://3g.dxy.cn/newh5/view/pneumonia"}}>丁香园新冠疫情实时动态</Item>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Fake.png')} onClick={() => {window.location.href="https://vp.fact.qq.com/home"}}>新型冠状病毒实时辟谣</Item>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Help.png')} onClick={() => {window.location.href="https://promo.guahao.com/topic/pneumonia"}}>微医抗击疫情实时救助</Item>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/bh.jpg')} onClick={() => {window.location.href="http://www.ncov-report.com/"}}>疫情评估与预测报告-北航</Item>
+
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/tinghua.jpg')} onClick={() => {window.location.href="http://ncov.deepeye.tech/"}}>疫情可视化分析-清华</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/pku.jpg')} onClick={() => {window.location.href="http://vis.pku.edu.cn/ncov/"}}>疫情可视化分析-北大</Item>
       </List>
