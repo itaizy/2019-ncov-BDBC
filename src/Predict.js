@@ -42,7 +42,9 @@ function Predict ({ data }) {
                 show: true,
                  textStyle: {
                    fontSize : 6      //更改坐标轴文字大小
-                 }
+                 },
+                 interval: 0,
+                 rotate: 60,
               },
               data: data.xAxis
           }
