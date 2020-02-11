@@ -230,7 +230,8 @@ function Area ({ area, onChange }) {
         // 表示在省一级
         if (x.name) {
           onChange(x)
-          window.location.href = window.location.href + "#Map"
+          // window.location.href = window.location.href + "#Map"
+          setTimeout('window.location="#Map"',300)
         }
       }}>
         <div className={`area ${x.name ? 'active' : ''}`}>
@@ -336,8 +337,8 @@ function App () {
         {/* </Carousel> */}
       {/* </WingBlank> */}
       
-      <div className="card">
-        <h2 id="Map">疫情地图 { province ? `· ${province.name}` : "(点击省市查看详情)" }
+      <div className="card" id="Map">
+        <h2>疫情地图 { province ? `· ${province.name}` : "(点击省市查看详情)" }
         {
           province ? <small
             onClick={() => setProvince(null)}
