@@ -230,7 +230,7 @@ function Area ({ area, onChange }) {
         // 表示在省一级
         if (x.name) {
           onChange(x)
-          window.location.href="#Map"
+          window.location.href = window.location.href + "#Map"
         }
       }}>
         <div className={`area ${x.name ? 'active' : ''}`}>
