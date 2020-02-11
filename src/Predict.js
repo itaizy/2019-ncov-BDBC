@@ -3,8 +3,9 @@ import ReactEcharts from 'echarts-for-react/lib/core'
 import echarts from 'echarts/lib/echarts'
 
 // import 'echarts/lib/chart/map'
-// import 'echarts/lib/component/visualMap'
-import  'echarts/lib/chart/line';
+import 'echarts/lib/component/visualMap'
+import 'echarts/lib/chart/line'
+import 'echarts/lib/component/legend'
 
 function Predict ({ data }) {
 
@@ -12,17 +13,17 @@ function Predict ({ data }) {
     return {
       // color: colors,
 
-      tooltip: {
-          trigger: 'none',
-          axisPointer: {
-              type: 'cross'
-          }
-      },
+      // tooltip: {
+      //     trigger: 'none',
+      //     axisPointer: {
+      //         type: 'cross'
+      //     }
+      // },
       legend: {
-          data: data.legend,
+          data: data.legend
       },
       grid: {
-          top: 70,
+          top: 30,
           bottom: 50
       },
       xAxis: [
@@ -37,20 +38,24 @@ function Predict ({ data }) {
                       // color: colors[1]
                   }
               },
-              axisPointer: {
-                  label: {
-                      formatter: function (params) {
-                          return '降水量  ' + params.value
-                              + (params.seriesData.length ? '：' + params.seriesData[0].data : '');
-                      }
-                  }
+              axisLabel: {
+                show: true,
+                 textStyle: {
+                   fontSize : 6      //更改坐标轴文字大小
+                 }
               },
               data: data.xAxis
           }
       ],
       yAxis: [
           {
-              type: 'value'
+              type: 'value',
+              axisLabel: {
+                show: true,
+                 textStyle: {
+                   fontSize : 6      //更改坐标轴文字大小
+                 }
+              },
           }
       ],
       series: [
@@ -87,6 +92,7 @@ function Predict ({ data }) {
           // onClick(e.name)
         }
       }}
+      style={{height: "200px"}}
     />
   )
 }

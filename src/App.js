@@ -131,8 +131,8 @@ function Summary () {
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Fake.png')} onClick={() => {window.location.href="https://vp.fact.qq.com/home"}}>新型冠状病毒实时辟谣</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Help.png')} onClick={() => {window.location.href="https://promo.guahao.com/topic/pneumonia"}}>微医抗击疫情实时救助</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/bh.jpg')} onClick={() => {window.location.href="http://www.ncov-report.com/"}}>疫情评估与预测报告-北航</Item>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/pku.jpg')} onClick={() => {window.location.href="http://ncov.deepeye.tech/"}}>疫情可视化分析-清华</Item>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/tinghua.jpg')} onClick={() => {window.location.href="http://vis.pku.edu.cn/ncov/"}}>疫情可视化分析-北大</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/tinghua.jpg')} onClick={() => {window.location.href="http://ncov.deepeye.tech/"}}>疫情可视化分析-清华</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/pku.jpg')} onClick={() => {window.location.href="http://vis.pku.edu.cn/ncov/"}}>疫情可视化分析-北大</Item>
       </List>
     </div>
     </div>
@@ -387,16 +387,15 @@ function App () {
         <Area area={area} onChange={setProvince} />
       </div>
       <div className="card" id="Predict">
-        <h2> 疫情预测 </h2>
+        <h2> 疫情预测（确诊趋势） </h2>
+        <div height="250px">
         <Suspense fallback={<div className="loading">正在加载中...</div>}>
-          <Predict data={{"legend": ["武汉", "武汉预测"], "xAxis": predictData.xAxis, "predict": predictData.wuhan, "truedata": predictData.wuhan_t}} onClick={() => {alert('仅供参考')}} />
-          {/*
-            province ? false :
-              <div className="tip">
-                在地图中点击省份可跳转到相应省份的疫情地图，并查看该省相关的实时动态
-              </div>
-          */ }
+          <Predict data={{"legend": ["武汉", "武汉趋势"], "xAxis": predictData.xAxis, "predict": predictData.wuhan, "truedata": predictData.wuhan_t}} onClick={() => {alert('仅供参考')}} />
+          <Predict data={{"legend": ["湖北（不含武汉）", "湖北（不含武汉）趋势"], "xAxis": predictData.xAxis, "predict": predictData.hubei, "truedata": predictData.hubei_t}} onClick={() => {alert('仅供参考')}} />
+          <Predict data={{"legend": ["北上广", "北上广趋势"], "xAxis": predictData.xAxis, "predict": predictData.bsg, "truedata": predictData.bsg_t}} onClick={() => {alert('仅供参考')}} />
+          <Predict data={{"legend": ["全国（不含湖北省）", "全国（不含湖北）趋势"], "xAxis": predictData.xAxis, "predict": predictData.all, "truedata": predictData.all_t}} onClick={() => {alert('仅供参考')}} />
         </Suspense>
+        </div>
       </div>
       <div className="card">
         <h2 id="local">周边疫情</h2>
