@@ -26,7 +26,7 @@ import Person from './person'
 import './App.css'
 import axios from 'axios'
 import TotalTag from "./TotalTag";
-import { green, red } from '_ansi-colors@3.2.4@ansi-colors'
+// import { green, red } from '_ansi-colors@3.2.4@ansi-colors'
 
 dayjs.extend(relativeTime)
 
