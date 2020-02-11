@@ -8,6 +8,7 @@ import all from './data/overall'
 import provinces from './data/area'
 import policy from './data/zc_new'
 import NavFab from "./component/NavFab"
+import predictData from './data/predictData'
 
 // import Carousel from 'antd-mobile/lib/carousel';  // 加载 JS
 import 'antd-mobile/lib/carousel/style/css';        // 加载 CSS
@@ -31,6 +32,7 @@ import TotalTag from "./TotalTag";
 dayjs.extend(relativeTime)
 
 const Map = React.lazy(() => import('./Map'))
+const Predict = React.lazy(() => import('./Predict'))
 
 const provincesByName = keyBy(provinces, 'name')
 const provincesByPinyin = keyBy(provinces, 'pinyin')
@@ -281,7 +283,7 @@ function Area ({ area, onChange }) {
 function Header ({ province }) {
   return (
     <header>
-      <img src={require("./noprovince-small2.jpg")} width="100%"/>
+      <img src={require("./noprovince-small3.jpg")} width="100%"/>
 
       {/* <div className="bg"></div> */}
       {/* <h1> */}
@@ -383,6 +385,18 @@ function App () {
           */ }
         </Suspense>
         <Area area={area} onChange={setProvince} />
+      </div>
+      <div className="card" id="Predict">
+        <h2> 疫情预测 </h2>
+        <Suspense fallback={<div className="loading">正在加载中...</div>}>
+          <Predict data={{"legend": ["武汉", "武汉预测"], "xAxis": predictData.xAxis, "predict": predictData.wuhan, "truedata": predictData.wuhan_t}} onClick={() => {alert('仅供参考')}} />
+          {/*
+            province ? false :
+              <div className="tip">
+                在地图中点击省份可跳转到相应省份的疫情地图，并查看该省相关的实时动态
+              </div>
+          */ }
+        </Suspense>
       </div>
       <div className="card">
         <h2 id="local">周边疫情</h2>

@@ -40,6 +40,7 @@ export default function Index(props) {
         ["趋势", "#Incr"],
         ["地图", "#Map"],
         ["定位", "#local"],
+        ["预测", "#Predict"],
         ["同程", "#Trip"],
         ["动态", "#News"],
         ["讯息", "#Summary"],
