@@ -314,22 +314,6 @@ function App () {
 
   return (
     <div>
-      <Container
-        style = {{zIndex: 100}}
-      >
-            <Link href="#Incr" >趋势</Link>
-            <Link href="#Map"  >地图</Link>
-            <Link href="#local" >定位</Link>
-            <Link href="#Trip" >同程</Link>
-            <Link href="#News" >动态</Link>
-            <Link href="#Summary" >讯息</Link>
-            <Link href="#Policy" >政策</Link>
-            <Link href="#Resource" >资源</Link>
-            <Link href="#About" >关于</Link>
-            <Button
-                rotate={true}
-                 >导航</Button>
-        </Container>
       <Header province={province} />
       <StatIncr modifyTime={all.modifyTime}/>
       {/* <WingBlank> */}
@@ -389,6 +373,22 @@ function App () {
       <About />
       <Callback />
       <Fallback />
+      <Container
+        style = {{zIndex: 100}}
+      >
+            <Link href="#Incr" >趋势</Link>
+            <Link href="#Map"  >地图</Link>
+            <Link href="#local" >定位</Link>
+            <Link href="#Trip" >同程</Link>
+            <Link href="#News" >动态</Link>
+            <Link href="#Summary" >讯息</Link>
+            <Link href="#Policy" >政策</Link>
+            <Link href="#Resource" >资源</Link>
+            <Link href="#About" >关于</Link>
+            <Button
+                rotate={true}
+                 >导航</Button>
+        </Container>
     </div>
   );
 }
