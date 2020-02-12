@@ -270,7 +270,7 @@ function StatIncr ({ modifyTime}) {
 
 function Fallback () {
   return (
-    <div className="fallback">
+    <div id="Fallback" className="fallback">
       <div>
         特别鸣谢: <a href="https://github.com/shfshanyue">shfshanyue</a>
       </div>
@@ -480,6 +480,18 @@ function App () {
       <Summary />
       <Resource />
       <About />
+      <div className="card info">
+      <h2 id="Disclaimer">免责声明</h2>
+      <List>
+        <Item multipleLine={true} wrap={true} >
+          <div style={{border:'1px solid #000'}}>
+            <p className="title">
+              &nbsp;&nbsp;&nbsp;&nbsp;本系统基于公开数据完成，分析与预测结果仅供研究参考，非官方结论，发布者不对报告结果和结论准确性负责。
+            </p>
+          </div>
+        </Item>
+      </List>
+      </div>
       <Callback />
       <Fallback />
       <NavFab/>

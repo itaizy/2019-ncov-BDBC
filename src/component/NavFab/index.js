@@ -48,6 +48,8 @@ export default function Index(props) {
         ["政策", "#Policy"],
         ["资源", "#Resource"],
         ["关于", "#About"],
+        ["免责", "#Disclaimer"],
+        ["反馈", "#Fallback"],
     ]
 
     const List = useMemo(() => NavItems.map(([name, link]) => ({ hide }) => (<ActionButton name={name} href={link} key={name} hide={hide} />)), [])
