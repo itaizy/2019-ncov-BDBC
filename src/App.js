@@ -394,7 +394,7 @@ function App () {
           <Predict data={{"legend": ["武汉", "武汉趋势"], "xAxis": predictData.xAxis, "predict": predictData.wuhan, "truedata": predictData.wuhan_t}} onClick={() => {alert('仅供参考')}} />
           <Predict data={{"legend": ["湖北（不含武汉）", "湖北（不含武汉）趋势"], "xAxis": predictData.xAxis, "predict": predictData.hubei, "truedata": predictData.hubei_t}} onClick={() => {alert('仅供参考')}} />
           <Predict data={{"legend": ["北上广", "北上广趋势"], "xAxis": predictData.xAxis, "predict": predictData.bsg, "truedata": predictData.bsg_t}} onClick={() => {alert('仅供参考')}} />
-          <Predict data={{"legend": ["全国（不含湖北省）", "全国（不含湖北）趋势"], "xAxis": predictData.xAxis, "predict": predictData.all, "truedata": predictData.all_t}} onClick={() => {alert('仅供参考')}} />
+          <Predict data={{"legend": ["全国（不含湖北）", "全国（不含湖北）趋势"], "xAxis": predictData.xAxis, "predict": predictData.all, "truedata": predictData.all_t}} onClick={() => {alert('仅供参考')}} />
         </Suspense>
         </div>
       </div>
