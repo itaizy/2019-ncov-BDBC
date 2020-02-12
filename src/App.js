@@ -379,6 +379,8 @@ function App () {
             autoplay={false}
             infinite
         > */}
+        <div className="card">
+        <h2>全国</h2>
             {all.quanguoTrendChart.map(n => (
               <div>
                 <img src={require('./images/' + n.imgUrl.split('/')[n.imgUrl.split('/').length - 1])}
@@ -390,6 +392,7 @@ function App () {
                          window.dispatchEvent(new Event('resize'));
                      }}/>
                      <WingBlank /></div>))}
+          <h2>湖北/非湖北</h2>
             {all.hbFeiHbTrendChart.map(n => (
               <div>
                 <img src={require('./images/' + n.imgUrl.split('/')[n.imgUrl.split('/').length - 1])}
@@ -401,6 +404,7 @@ function App () {
                          window.dispatchEvent(new Event('resize'));
                      }}/>
                      <WingBlank /></div>))}
+                     </div>
         {/* </Carousel> */}
       {/* </WingBlank> */}
       
@@ -431,7 +435,7 @@ function App () {
         <Area area={area} onChange={setProvince} />
       </div>
       <div className="card" id="Predict">
-        <h2> 疫情预测（确诊趋势） </h2>
+        <h2> 疫情预测（确诊趋势）· 近期</h2>
         <div height="250px">
         <Suspense fallback={<div className="loading">正在加载中...</div>}>
           <Predict data={{"legend": ["武汉", "武汉趋势"], "xAxis": predictData.xAxis, "predict": predictData.wuhan, "truedata": predictData.wuhan_t}} onClick={() => {alert('仅供参考')}} />
@@ -440,6 +444,31 @@ function App () {
           <Predict data={{"legend": ["全国（不含湖北）", "全国（不含湖北）趋势"], "xAxis": predictData.xAxis, "predict": predictData.all, "truedata": predictData.all_t}} onClick={() => {alert('仅供参考')}} />
         </Suspense>
         </div>
+        <h2> 疫情预测（确诊趋势）· 长期</h2>
+        <div>
+          <img src={require('./images/p_bsg.png')} alt="" style={{ width: '100%'}}
+                     onLoad={() => {
+                         window.dispatchEvent(new Event('resize'));
+                     }}/>
+                     <WingBlank /></div>
+        <div>
+          <img src={require('./images/p_all.png')} alt="" style={{ width: '100%'}}
+                     onLoad={() => {
+                         window.dispatchEvent(new Event('resize'));
+                     }}/>
+                     <WingBlank /></div>
+        <div>
+          <img src={require('./images/p_hb.png')} alt="" style={{ width: '100%'}}
+                     onLoad={() => {
+                         window.dispatchEvent(new Event('resize'));
+                     }}/>
+                     <WingBlank /></div>
+        <div>
+          <img src={require('./images/p_wh.png')} alt="" style={{ width: '100%'}}
+                     onLoad={() => {
+                         window.dispatchEvent(new Event('resize'));
+                     }}/>
+                     <WingBlank /></div>
       </div>
       <div className="card">
         <h2 id="local">周边疫情</h2>
