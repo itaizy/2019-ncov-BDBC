@@ -6,6 +6,8 @@ from PIL import Image
 import numpy as np
 val = os.system('cd .. && node scripts/build-origin.js')
 print('DXY Data update.' + str(val))
+val = os.system('wget -O - http://c.m.163.com/nc/article/headline/T1348647853363/0-40.html > data/n163.json')
+print('n163 Data update.' + str(val))
 f = open('data/overall.json',encoding='utf-8')
 user_dic = json.load(f)
 print("加载入文件完成...")

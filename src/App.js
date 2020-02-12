@@ -1,14 +1,15 @@
-import React, { useState, Suspense, useEffect, Component  } from 'react'
+import React, { useState, Suspense, useEffect  } from 'react'
 import keyBy from 'lodash.keyby'
 import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import relativeTime from 'dayjs/plugin/relativeTime'
-import { Carousel, WingBlank, List } from 'antd-mobile';
+import { Carousel, WingBlank, List, Card, WhiteSpace } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
 import policy from './data/zc_new'
 import NavFab from "./component/NavFab"
 import predictData from './data/predictData'
+import n163 from './data/n163'
 
 // import Carousel from 'antd-mobile/lib/carousel';  // 加载 JS
 import 'antd-mobile/lib/carousel/style/css';        // 加载 CSS
@@ -16,6 +17,8 @@ import 'antd-mobile/lib/carousel/style/css';        // 加载 CSS
 import 'antd-mobile/lib/wing-blank/style/css';        // 加载 CSS
 // import List from 'antd-mobile/lib/list';  // 加载 JS
 import 'antd-mobile/lib/list/style/css';        // 加载 CSS
+import 'antd-mobile/lib/card/style/css';        // 加载 CSS
+import 'antd-mobile/lib/white-space/style/css';        // 加载 CSS
 
 // import { Fab, Action } from 'react-tiny-fab';
 // import 'react-tiny-fab/dist/styles.css';
@@ -77,6 +80,35 @@ function News ({ province }) {
           .filter(n => province ? province.provinceShortName === (n.provinceName && n.provinceName.slice(0, 2)) : true)
           .slice(0, len)
           .map(n => <New {...n} key={n.id} />)
+      }
+      <div className="more" onClick={() => { setLen() }}>点击查看全部动态</div>
+    </div>
+  )
+}
+
+function Toutiao () {
+  const [len, setLen] = useState(8)
+  const n163news = n163.T1348647853363
+
+  return (
+  
+    <div className="card">
+      <h2 id="Toutiao">头条新闻</h2>
+      {
+        n163news
+          .slice(0, len)
+          .map(n => <div>
+            <Card>
+            <Card.Header
+              title={n.title}
+            />
+            <Card.Body>
+              <div><a href={n.url}><img src={n.imgsrc} width="100%"></img></a></div>
+            </Card.Body>
+            <Card.Footer content={n.mtime} extra={<div>回复：{n.replyCount}</div>} />
+          </Card>
+          <WhiteSpace size="lg" />
+          </div>)
       }
       <div className="more" onClick={() => { setLen() }}>点击查看全部动态</div>
     </div>
@@ -403,6 +435,7 @@ function App () {
       </div>
       <iframe src="https://map.sogou.com/m/shouji4/page/emap/?_=0.8058073278712437" width="100%" height="500px" frameBorder="0"></iframe>
       <News province={province} />
+      <Toutiao />
       <Policys />
       <Summary />
       <Resource />
