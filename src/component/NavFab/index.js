@@ -43,6 +43,7 @@ export default function Index(props) {
         ["预测", "#Predict"],
         ["同乘", "#Trip"],
         ["动态", "#News"],
+        ["头条", "#Toutiao"],
         ["讯息", "#Summary"],
         ["政策", "#Policy"],
         ["资源", "#Resource"],
