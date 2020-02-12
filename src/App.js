@@ -379,9 +379,20 @@ function App () {
             autoplay={false}
             infinite
         > */}
-            {all.dailyPics.map(n => (
+            {all.quanguoTrendChart.map(n => (
               <div>
-                <img src={require('./images/' + n.split('/')[n.split('/').length - 1])}
+                <img src={require('./images/' + n.imgUrl.split('/')[n.imgUrl.split('/').length - 1])}
+                     alt=""
+                    //  style={{ width: '100%', verticalAlign: 'top' }}
+                     style={{ width: '100%'}}
+                     onLoad={() => {
+                         // fire window resize event to change height
+                         window.dispatchEvent(new Event('resize'));
+                     }}/>
+                     <WingBlank /></div>))}
+            {all.hbFeiHbTrendChart.map(n => (
+              <div>
+                <img src={require('./images/' + n.imgUrl.split('/')[n.imgUrl.split('/').length - 1])}
                      alt=""
                     //  style={{ width: '100%', verticalAlign: 'top' }}
                      style={{ width: '100%'}}
