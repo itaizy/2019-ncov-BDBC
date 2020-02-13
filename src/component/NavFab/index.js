@@ -14,7 +14,7 @@ const Root = styled.div`
 `
 
 const StyledFab = styled(Fab)`
-    opacity:${({ hide }) => hide ? 0 : 1} !important;
+    opacity:${({ hide }) => hide ? 0 : 0.75} !important;
     transition: opacity 0.3s ease-out !important;
 `
 const MainFab = styled(Fab)`
