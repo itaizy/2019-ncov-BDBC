@@ -189,8 +189,9 @@ function About () {
       <h2 id="About">关于我们</h2>
       <List>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/bdbc.png')} multipleLine={true} wrap={true} onClick={() => {window.location.href="http://bdbc.buaa.edu.cn/"}}>北京市大数据科学与脑机智能高精尖创新中心(BDBC)</Item>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/DQ.png')} wrap={true}  onClick={() => {window.location.href="https://rse.buaa.edu.cn/plus/view.php?aid=117"}}>北航可靠性与系统工程学院李大庆课题组</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/DQ.png')} wrap={true}  onClick={() => {window.location.href="https://rse.buaa.edu.cn/plus/view.php?aid=117"}}>北航复杂系统可靠性实验室李大庆教授团队</Item>
       </List>
+      <img src={require('./images/wxgzh.jpg')} width="100%"></img>
       {/* <li><a href="http://bdbc.buaa.edu.cn/">北京市大数据科学与脑机智能高精尖创新中心(BDBC)</a></li> */}
       {/* <li><a href="https://rse.buaa.edu.cn/plus/view.php?aid=117">北航可靠性与系统工程学院李大庆课题组</a></li> */}
       {/* <a href="http://act.buaa.edu.cn/lijx/"><Person Icon="http://act.buaa.edu.cn/lijx/pics/lijx.JPG" Name="李建欣" Title="教授" Organization="计算机学院"/></a> */}
