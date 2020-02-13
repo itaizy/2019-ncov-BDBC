@@ -8,7 +8,7 @@ function TotalTag ({ children, number, total, className }) {
       <div className={className}>
         { total }
       </div>
-      较昨日<div className={"total"+ className}>+{ number }</div>
+      较昨日<div className={"total"+ className}>{ number > 0 ? ('+' + number): number}</div>
     </div>
   )
 }
