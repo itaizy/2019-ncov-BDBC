@@ -225,7 +225,7 @@ function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCou
         <Tag number={confirmedCount} className="numberconfirmed">
           确诊
         </Tag>
-        <Tag number={suspectedCount} className="number">
+        <Tag number={suspectedCount || '-'} className="number">
           疑似
         </Tag>
         <Tag number={deadCount} className="dead">
@@ -252,7 +252,7 @@ function StatIncr ({ modifyTime}) {
         <TotalTag number={all.confirmedIncr} total={all.confirmedCount} className="numberconfirmed">
           确诊
         </TotalTag>
-        <TotalTag number={all.suspectedIncr || '-'}  total={all.suspectedCount} className="number">
+        <TotalTag number={all.suspectedIncr}  total={all.suspectedCount} className="number">
           疑似
         </TotalTag>
         <TotalTag number={all.seriousIncr} total={all.seriousCount} className="dead">
