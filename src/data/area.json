@@ -3059,8 +3059,8 @@
     "name": "陕西",
     "provinceName": "陕西省",
     "provinceShortName": "陕西",
-    "currentConfirmedCount": 176,
-    "confirmedCount": 230,
+    "currentConfirmedCount": 178,
+    "confirmedCount": 232,
     "suspectedCount": 0,
     "curedCount": 54,
     "deadCount": 0,
@@ -3089,8 +3089,8 @@
       },
       {
         "cityName": "安康",
-        "currentConfirmedCount": 18,
-        "confirmedCount": 23,
+        "currentConfirmedCount": 19,
+        "confirmedCount": 24,
         "suspectedCount": 0,
         "curedCount": 5,
         "deadCount": 0,
@@ -3099,8 +3099,8 @@
       },
       {
         "cityName": "渭南",
-        "currentConfirmedCount": 14,
-        "confirmedCount": 14,
+        "currentConfirmedCount": 15,
+        "confirmedCount": 15,
         "suspectedCount": 0,
         "curedCount": 0,
         "deadCount": 0,
@@ -3909,8 +3909,8 @@
     "name": "天津",
     "provinceName": "天津市",
     "provinceShortName": "天津",
-    "currentConfirmedCount": 85,
-    "confirmedCount": 120,
+    "currentConfirmedCount": 86,
+    "confirmedCount": 121,
     "suspectedCount": 0,
     "curedCount": 32,
     "deadCount": 3,
@@ -3919,8 +3919,8 @@
     "cities": [
       {
         "cityName": "宝坻区",
-        "currentConfirmedCount": 37,
-        "confirmedCount": 46,
+        "currentConfirmedCount": 38,
+        "confirmedCount": 47,
         "suspectedCount": 0,
         "curedCount": 7,
         "deadCount": 2,
@@ -4324,8 +4324,8 @@
     "name": "内蒙古",
     "provinceName": "内蒙古自治区",
     "provinceShortName": "内蒙古",
-    "currentConfirmedCount": 59,
-    "confirmedCount": 65,
+    "currentConfirmedCount": 62,
+    "confirmedCount": 68,
     "suspectedCount": 0,
     "curedCount": 6,
     "deadCount": 0,
@@ -4353,6 +4353,16 @@
         "fullCityName": "鄂尔多斯市"
       },
       {
+        "cityName": "巴彦淖尔",
+        "currentConfirmedCount": 8,
+        "confirmedCount": 8,
+        "suspectedCount": 0,
+        "curedCount": 0,
+        "deadCount": 0,
+        "locationId": 150800,
+        "fullCityName": "巴彦淖尔市"
+      },
+      {
         "cityName": "呼和浩特",
         "currentConfirmedCount": 7,
         "confirmedCount": 7,
@@ -4373,14 +4383,14 @@
         "fullCityName": "通辽市"
       },
       {
-        "cityName": "巴彦淖尔",
-        "currentConfirmedCount": 6,
-        "confirmedCount": 6,
+        "cityName": "赤峰",
+        "currentConfirmedCount": 5,
+        "confirmedCount": 7,
         "suspectedCount": 0,
-        "curedCount": 0,
+        "curedCount": 2,
         "deadCount": 0,
-        "locationId": 150800,
-        "fullCityName": "巴彦淖尔市"
+        "locationId": 150400,
+        "fullCityName": "赤峰市"
       },
       {
         "cityName": "呼伦贝尔",
@@ -4393,19 +4403,9 @@
         "fullCityName": "呼伦贝尔市"
       },
       {
-        "cityName": "赤峰",
-        "currentConfirmedCount": 5,
-        "confirmedCount": 7,
-        "suspectedCount": 0,
-        "curedCount": 2,
-        "deadCount": 0,
-        "locationId": 150400,
-        "fullCityName": "赤峰市"
-      },
-      {
         "cityName": "锡林郭勒盟",
-        "currentConfirmedCount": 4,
-        "confirmedCount": 5,
+        "currentConfirmedCount": 5,
+        "confirmedCount": 6,
         "suspectedCount": 0,
         "curedCount": 1,
         "deadCount": 0,
@@ -4673,10 +4673,10 @@
     "name": "台湾",
     "provinceName": "台湾",
     "provinceShortName": "台湾",
-    "currentConfirmedCount": 16,
+    "currentConfirmedCount": 17,
     "confirmedCount": 18,
     "suspectedCount": 0,
-    "curedCount": 2,
+    "curedCount": 1,
     "deadCount": 0,
     "comment": "",
     "locationId": 710000,
