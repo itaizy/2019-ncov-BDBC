@@ -177,7 +177,8 @@ function Resource () {
     <div className="card info">
       <h2 id="Resource">抗疫资源</h2>
       <List>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tel.png')} onClick={() => {window.location.href="https://mp.weixin.qq.com/s/IQaSZxNirg-mIXCNTG-lTw"}}>全国各省市口罩生产商联系方式</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tel.png')} onClick={() => {window.location.href="https://mp.weixin.qq.com/s/IQaSZxNirg-mIXCNTG-lTw"}}>口罩 | 全国各省市口罩生产商联系方式</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tel.png')} onClick={() => {window.location.href="https://mp.weixin.qq.com/s/15-240GSr8T-Hnbh3bNUsQ"}}>测温 | 全国部分额温枪，红外测温仪厂家联系方式！</Item>
       </List>
     </div>
   )
