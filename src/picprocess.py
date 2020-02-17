@@ -28,6 +28,7 @@ print("加载入文件完成...")
 print(user_dic['dailyPics'])
 for img_url in user_dic['quanguoTrendChart']:
     kp = img_url['imgUrl']
+    print(kp)
     filename = 'images/' + kp.split('/')[-1]
     urlretrieve(kp, filename)
     im = Image.open(filename)
@@ -41,6 +42,7 @@ for img_url in user_dic['quanguoTrendChart']:
     im.save(filename)
 for img_url in user_dic['hbFeiHbTrendChart']:
     kp = img_url['imgUrl']
+    print(kp)
     filename = 'images/' + kp.split('/')[-1]
     urlretrieve(kp, filename)
     im = Image.open(filename)
