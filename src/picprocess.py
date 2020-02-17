@@ -37,7 +37,7 @@ for img_url in user_dic['quanguoTrendChart']:
     print(im.size)
     for row in range(im.size[0]):
         for line in range(im.size[1]):
-            if im_array[row, line][0] > 240 and im_array[row, line][1] > 240 and im_array[row, line][2] > 240:
+            if im_array[row, line][0] >= 240 and im_array[row, line][1] >= 240 and im_array[row, line][2] >= 240:
                 im_array[row, line] = (255, 255, 255)
     im.save(filename)
 for img_url in user_dic['hbFeiHbTrendChart']:
@@ -51,7 +51,7 @@ for img_url in user_dic['hbFeiHbTrendChart']:
     print(im.size)
     for row in range(im.size[0]):
         for line in range(im.size[1]):
-            if im_array[row, line][0] > 240 and im_array[row, line][1] > 240 and im_array[row, line][2] > 240:
+            if im_array[row, line][0] >= 240 and im_array[row, line][1] >= 240 and im_array[row, line][2] >= 240:
                 im_array[row, line] = (255, 255, 255)
     im.save(filename)
 val = os.system('cd .. && npm install')
