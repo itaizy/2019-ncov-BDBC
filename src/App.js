@@ -7,6 +7,8 @@ import { Carousel, WingBlank, List, Card, WhiteSpace } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
 import policy from './data/zc_new'
+import policy_zhy from './data/zc_new'
+import policy_bj from './data/zc_new'
 import NavFab from "./component/NavFab"
 import predictData from './data/predictData'
 import n163 from './data/n163'
@@ -125,7 +127,7 @@ function OnePolicy ({ title, content, url, time, publisher, location }) {
         {time}
       </div>
       <a className="title" href={url}>{ title }</a>
-      <div className="summary">{ content.slice(0, 100) }...</div>
+      <div className="summary">{ content.slice(0, 100) + '...' }</div>
       <div className="relative-right">
           {publisher}
       </div>
@@ -135,10 +137,44 @@ function OnePolicy ({ title, content, url, time, publisher, location }) {
 
 function Policys () {
   const [len, setLen] = useState(8)
+  const [len_zhy, setLen_zhy] = useState(8)
+  const [len_bj, setLen_bj] = useState(8)
   // const [news, setNews] = useState([])
+  // const [phref, setphref] = useState(null) 
+  
+  // useEffect(() => {
+  //   if(phref) {
+  //     window.href.location = phref
+  //   }
+  // }, [phref])
 
   return (
     <div className="card">
+      <h2 id="Policy">国务院政策</h2>
+      <List>
+        {/* {
+          policy_zhy
+          .slice(0, len_zhy)
+          .map((n, index) => 
+            <Item id={index} arrow="horizontal" onClick={}>{n.title}</Item>
+          )
+        } */}
+        {
+        policy_zhy
+        .slice(0, len_zhy)
+        .map(n => <OnePolicy {...n} key={n.index} content="" publisher={n.time} location="" time=""/>)
+      }
+      </List>
+      <div className="more" onClick={() => { setLen_zhy() }}>点击查看全部动态</div>
+      <h2 id="Policy">北京政策</h2>
+      <List>
+        {
+        policy_bj
+        .slice(0, len_bj)
+        .map(n => <OnePolicy {...n} key={n.index} content="" publisher={n.time} location="" time=""/>)
+      }
+      </List>
+      <div className="more" onClick={() => { setLen_bj() }}>点击查看全部动态</div>
       <h2 id="Policy">政策扶持</h2>
       {
         policy
@@ -179,6 +215,7 @@ function Resource () {
       <List>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tel.png')} onClick={() => {window.location.href="https://mp.weixin.qq.com/s/IQaSZxNirg-mIXCNTG-lTw"}}>口罩 | 全国各省市口罩生产商联系方式</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tel.png')} onClick={() => {window.location.href="https://mp.weixin.qq.com/s/15-240GSr8T-Hnbh3bNUsQ"}}>测温 | 全国部分额温枪，红外测温仪厂家联系方式！</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Tel.png')} onClick={() => {window.location.href="https://mp.weixin.qq.com/s/aYdR77aGsTnLBS7mq8VNBQ"}}>防护服帽子 | 全国防护服，医用帽厂家联系方式！</Item>
       </List>
     </div>
   )
