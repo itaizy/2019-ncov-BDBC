@@ -7,8 +7,8 @@ import { Carousel, WingBlank, List, Card, WhiteSpace } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
 import policy from './data/zc_new'
-import policy_zhy from './data/zc_new'
-import policy_bj from './data/zc_new'
+import policy_zhy from './data/zc_zhy'
+import policy_bj from './data/zc_bj'
 import NavFab from "./component/NavFab"
 import predictData from './data/predictData'
 import n163 from './data/n163'
@@ -152,29 +152,33 @@ function Policys () {
     <div className="card">
       <h2 id="Policy">国务院政策</h2>
       <List>
-        {/* {
+        {
           policy_zhy
           .slice(0, len_zhy)
           .map((n, index) => 
-            <Item id={index} arrow="horizontal" onClick={}>{n.title}</Item>
+            <Item id={index} arrow="horizontal" ><a href={n.link}>{n.title + n.link}</a></Item>
           )
-        } */}
-        {
+        }
+        {/* {
         policy_zhy
         .slice(0, len_zhy)
         .map(n => <OnePolicy {...n} key={n.index} content="" publisher={n.time} location="" time=""/>)
-      }
+      } */}
       </List>
       <div className="more" onClick={() => { setLen_zhy() }}>点击查看全部动态</div>
+      <br />
       <h2 id="Policy">北京政策</h2>
       <List>
         {
         policy_bj
         .slice(0, len_bj)
-        .map(n => <OnePolicy {...n} key={n.index} content="" publisher={n.time} location="" time=""/>)
+        .map((n, index) => 
+          <Item id={index} arrow="horizontal" ><a href={n.link}>{n.title + n.link}</a></Item>
+        )
       }
       </List>
       <div className="more" onClick={() => { setLen_bj() }}>点击查看全部动态</div>
+      <br />
       <h2 id="Policy">政策扶持</h2>
       {
         policy
