@@ -4,7 +4,7 @@ import json
 from urllib.request import urlretrieve
 from PIL import Image
 import numpy as np
-val = os.system('cd .. && node scripts/build-origin.js')
+val = os.system('cd .. && /usr/local/bin/node scripts/build-origin.js')
 print('DXY Data update.' + str(val))
 val = os.system('wget -O - http://c.m.163.com/nc/article/headline/T1348647853363/0-40.html > data/n163.json')
 f163 = open('data/n163.json',encoding='utf-8')
@@ -39,6 +39,9 @@ for img_url in user_dic['quanguoTrendChart']:
         for line in range(im.size[1]):
             if im_array[row, line][0] >= 235 and im_array[row, line][1] >= 235 and im_array[row, line][2] >= 235:
                 im_array[row, line] = (255, 255, 255)
+    im = im.crop((0, 140, im.size[0], im.size[1]))
+    if (img_url['title'] == '非湖北现存确诊'):
+        im = im.crop((0, 140, im.size[0], im.size[1]))
     im.save(filename)
 for img_url in user_dic['hbFeiHbTrendChart']:
     kp = img_url['imgUrl']
@@ -53,12 +56,13 @@ for img_url in user_dic['hbFeiHbTrendChart']:
         for line in range(im.size[1]):
             if im_array[row, line][0] >= 235 and im_array[row, line][1] >= 235 and im_array[row, line][2] >= 235:
                 im_array[row, line] = (255, 255, 255)
+    im  = im.crop((0, 140, im.size[0], im.size[1]))
     im.save(filename)
-val = os.system('cd .. && npm install')
+val = os.system('cd .. && /usr/local/bin/npm install')
 print('安装依赖' + str(val))
-val = os.system('cd .. && npm run build')
+val = os.system('cd .. && /usr/local/bin/npm run build')
 print('build complete' + str(val))
 val = os.system('cp ../build/index.html ../build/ncov/')
 print('Done.' + str(val))
-val = os.system('python3 gb.py')
+val = os.system('/usr/bin/python3 gb.py')
 print('GB Done.' + str(val))
