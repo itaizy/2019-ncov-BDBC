@@ -36325,3 +36325,1256 @@ https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
 build complete0
 Done.0
 GB Done.0
+up to date in 10.321s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.03 KB           build/ncov/static/js/main.46f46585.chunk.js
+  196.87 KB (+180 B)  build/ncov/static/js/data.e1b392f3.chunk.js
+  123.13 KB           build/ncov/static/js/41.a88280b8.chunk.js
+  109.82 KB           build/ncov/static/js/0.672ca51e.chunk.js
+  54.55 KB            build/ncov/static/js/40.c223a51e.chunk.js
+  47.5 KB             build/ncov/static/js/36.de7b8a82.chunk.js
+  46.86 KB            build/ncov/static/js/9.2e0dc442.chunk.js
+  44.4 KB             build/ncov/static/js/21.216ef102.chunk.js
+  37.95 KB            build/ncov/static/js/16.b0945f0e.chunk.js
+  37.94 KB            build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB            build/ncov/static/js/42.7ea4dae6.chunk.js
+  36.05 KB            build/ncov/static/js/29.c6e6e7f6.chunk.js
+  28.64 KB            build/ncov/static/js/15.9b4bdef6.chunk.js
+  28.38 KB            build/ncov/static/js/32.43058e8a.chunk.js
+  27.55 KB            build/ncov/static/js/28.38e8526c.chunk.js
+  27.11 KB            build/ncov/static/js/17.744180ee.chunk.js
+  26.91 KB            build/ncov/static/js/31.caa947bb.chunk.js
+  26.63 KB            build/ncov/static/js/24.c0b7d648.chunk.js
+  25.9 KB             build/ncov/static/js/13.53007ca0.chunk.js
+  25.62 KB            build/ncov/static/js/43.95180f60.chunk.js
+  23.54 KB            build/ncov/static/js/27.940eaff8.chunk.js
+  22.9 KB             build/ncov/static/js/20.14ade650.chunk.js
+  22.67 KB            build/ncov/static/js/23.16cc0153.chunk.js
+  22.17 KB            build/ncov/static/js/14.68f640ff.chunk.js
+  21.36 KB            build/ncov/static/js/22.a466e309.chunk.js
+  19.46 KB            build/ncov/static/js/18.95e4840a.chunk.js
+  19.41 KB            build/ncov/static/js/5.29c5a36d.chunk.js
+  18.9 KB             build/ncov/static/js/35.7e6818db.chunk.js
+  18.84 KB            build/ncov/static/js/26.2ac39275.chunk.js
+  18.55 KB            build/ncov/static/js/10.0c828cd2.chunk.js
+  16.04 KB            build/ncov/static/js/19.82f6e7ff.chunk.js
+  14.13 KB            build/ncov/static/js/25.4d5d296f.chunk.js
+  14.05 KB            build/ncov/static/js/34.eb1fcfc4.chunk.js
+  10.86 KB            build/ncov/static/js/12.e68a3208.chunk.js
+  9.53 KB             build/ncov/static/js/6.1f189560.chunk.js
+  8 KB                build/ncov/static/js/37.243bd9cd.chunk.js
+  7.61 KB             build/ncov/static/js/30.6842614c.chunk.js
+  6.7 KB              build/ncov/static/js/38.5bdba1c9.chunk.js
+  5.96 KB             build/ncov/static/js/33.8a57e58c.chunk.js
+  4.79 KB             build/ncov/static/js/39.85a2cc75.chunk.js
+  4.3 KB              build/ncov/static/css/main.0890d271.chunk.css
+  1.53 KB             build/ncov/static/js/runtime-main.a1809046.js
+  1.34 KB             build/ncov/static/js/7.8afa7b69.chunk.js
+  816 B               build/ncov/static/js/11.a2b89bad.chunk.js
+  517 B               build/ncov/static/js/8.5bf946f7.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'currentConfirmedIncr': -1588, 'deadIncr': 30, 'modifyTime': 1583464831000, 'seriousIncr': -215, 'curedCount': 53813, 'curedIncr': 1704, 'suspectedCount': 482, 'seriousCount': 5737, 'suspectedIncr': 102, 'confirmedCount': 80711, 'confirmedIncr': 146, 'currentConfirmedCount': 23853, 'deadCount': 3045}
+Done.
+https://img1.dxycdn.com/2020/0306/597/3400457079386500428-135.png
+https://img1.dxycdn.com/2020/0306/372/3400457098713559033-135.png
+https://img1.dxycdn.com/2020/0306/735/3400457120188396521-135.png
+https://img1.dxycdn.com/2020/0306/241/3400457206088040740-135.png
+https://img1.dxycdn.com/2020/0306/916/3400457223267615825-135.png
+https://img1.dxycdn.com/2020/0306/843/3400457354264124689-135.png
+https://img1.dxycdn.com/2020/0306/610/3400457388624159546-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/597/3400457079386500428-135.png
+(1647, 885)
+https://img1.dxycdn.com/2020/0306/372/3400457098713559033-135.png
+(1656, 887)
+https://img1.dxycdn.com/2020/0306/735/3400457120188396521-135.png
+(1833, 902)
+https://img1.dxycdn.com/2020/0306/241/3400457206088040740-135.png
+(1652, 902)
+https://img1.dxycdn.com/2020/0306/916/3400457223267615825-135.png
+(1649, 902)
+https://img1.dxycdn.com/2020/0306/843/3400457354264124689-135.png
+(1652, 902)
+https://img1.dxycdn.com/2020/0306/610/3400457388624159546-135.png
+(1652, 902)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+up to date in 10.202s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.03 KB           build/ncov/static/js/main.46f46585.chunk.js
+  197.01 KB (+142 B)  build/ncov/static/js/data.73528b65.chunk.js
+  123.13 KB           build/ncov/static/js/41.a88280b8.chunk.js
+  109.82 KB           build/ncov/static/js/0.672ca51e.chunk.js
+  54.55 KB            build/ncov/static/js/40.c223a51e.chunk.js
+  47.5 KB             build/ncov/static/js/36.de7b8a82.chunk.js
+  46.86 KB            build/ncov/static/js/9.2e0dc442.chunk.js
+  44.4 KB             build/ncov/static/js/21.216ef102.chunk.js
+  37.95 KB            build/ncov/static/js/16.b0945f0e.chunk.js
+  37.94 KB            build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB            build/ncov/static/js/42.7ea4dae6.chunk.js
+  36.05 KB            build/ncov/static/js/29.c6e6e7f6.chunk.js
+  28.64 KB            build/ncov/static/js/15.9b4bdef6.chunk.js
+  28.38 KB            build/ncov/static/js/32.43058e8a.chunk.js
+  27.55 KB            build/ncov/static/js/28.38e8526c.chunk.js
+  27.11 KB            build/ncov/static/js/17.744180ee.chunk.js
+  26.91 KB            build/ncov/static/js/31.caa947bb.chunk.js
+  26.63 KB            build/ncov/static/js/24.c0b7d648.chunk.js
+  25.9 KB             build/ncov/static/js/13.53007ca0.chunk.js
+  25.62 KB            build/ncov/static/js/43.95180f60.chunk.js
+  23.54 KB            build/ncov/static/js/27.940eaff8.chunk.js
+  22.9 KB             build/ncov/static/js/20.14ade650.chunk.js
+  22.67 KB            build/ncov/static/js/23.16cc0153.chunk.js
+  22.17 KB            build/ncov/static/js/14.68f640ff.chunk.js
+  21.36 KB            build/ncov/static/js/22.a466e309.chunk.js
+  19.46 KB            build/ncov/static/js/18.95e4840a.chunk.js
+  19.41 KB            build/ncov/static/js/5.29c5a36d.chunk.js
+  18.9 KB             build/ncov/static/js/35.7e6818db.chunk.js
+  18.84 KB            build/ncov/static/js/26.2ac39275.chunk.js
+  18.55 KB            build/ncov/static/js/10.0c828cd2.chunk.js
+  16.04 KB            build/ncov/static/js/19.82f6e7ff.chunk.js
+  14.13 KB            build/ncov/static/js/25.4d5d296f.chunk.js
+  14.05 KB            build/ncov/static/js/34.eb1fcfc4.chunk.js
+  10.86 KB            build/ncov/static/js/12.e68a3208.chunk.js
+  9.53 KB             build/ncov/static/js/6.1f189560.chunk.js
+  8 KB                build/ncov/static/js/37.243bd9cd.chunk.js
+  7.61 KB             build/ncov/static/js/30.6842614c.chunk.js
+  6.7 KB              build/ncov/static/js/38.5bdba1c9.chunk.js
+  5.96 KB             build/ncov/static/js/33.8a57e58c.chunk.js
+  4.79 KB             build/ncov/static/js/39.85a2cc75.chunk.js
+  4.3 KB              build/ncov/static/css/main.0890d271.chunk.css
+  1.53 KB             build/ncov/static/js/runtime-main.a1809046.js
+  1.34 KB             build/ncov/static/js/7.8afa7b69.chunk.js
+  816 B               build/ncov/static/js/11.a2b89bad.chunk.js
+  517 B               build/ncov/static/js/8.5bf946f7.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'confirmedCount': 80714, 'deadCount': 3045, 'curedIncr': 1708, 'curedCount': 53817, 'seriousCount': 5737, 'deadIncr': 30, 'currentConfirmedCount': 23852, 'suspectedCount': 482, 'modifyTime': 1583474339000, 'confirmedIncr': 149, 'seriousIncr': -215, 'currentConfirmedIncr': -1589, 'suspectedIncr': 102}
+Done.
+https://img1.dxycdn.com/2020/0306/597/3400457079386500428-135.png
+https://img1.dxycdn.com/2020/0306/372/3400457098713559033-135.png
+https://img1.dxycdn.com/2020/0306/735/3400457120188396521-135.png
+https://img1.dxycdn.com/2020/0306/241/3400457206088040740-135.png
+https://img1.dxycdn.com/2020/0306/916/3400457223267615825-135.png
+https://img1.dxycdn.com/2020/0306/843/3400457354264124689-135.png
+https://img1.dxycdn.com/2020/0306/610/3400457388624159546-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/597/3400457079386500428-135.png
+(1647, 885)
+https://img1.dxycdn.com/2020/0306/372/3400457098713559033-135.png
+(1656, 887)
+https://img1.dxycdn.com/2020/0306/735/3400457120188396521-135.png
+(1833, 902)
+https://img1.dxycdn.com/2020/0306/241/3400457206088040740-135.png
+(1652, 902)
+https://img1.dxycdn.com/2020/0306/916/3400457223267615825-135.png
+(1649, 902)
+https://img1.dxycdn.com/2020/0306/843/3400457354264124689-135.png
+(1652, 902)
+https://img1.dxycdn.com/2020/0306/610/3400457388624159546-135.png
+(1652, 902)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+up to date in 10.331s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.2 KB (+177 B)   build/ncov/static/js/main.df0986e2.chunk.js
+  197.11 KB (+105 B)  build/ncov/static/js/data.3a8078e4.chunk.js
+  123.14 KB (+5 B)    build/ncov/static/js/41.5d4edd0f.chunk.js
+  109.81 KB (-7 B)    build/ncov/static/js/0.2a6272a2.chunk.js
+  54.55 KB (+1 B)     build/ncov/static/js/40.e77a84e3.chunk.js
+  47.51 KB (+1 B)     build/ncov/static/js/36.e993d9b1.chunk.js
+  46.86 KB            build/ncov/static/js/9.571696f2.chunk.js
+  44.39 KB (-1 B)     build/ncov/static/js/21.63a2b7f9.chunk.js
+  37.95 KB (-1 B)     build/ncov/static/js/16.f7003818.chunk.js
+  37.94 KB            build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB            build/ncov/static/js/42.569b9f75.chunk.js
+  36.05 KB (-2 B)     build/ncov/static/js/29.1370224f.chunk.js
+  28.64 KB            build/ncov/static/js/15.82d9627a.chunk.js
+  28.38 KB (-1 B)     build/ncov/static/js/32.d5659237.chunk.js
+  27.55 KB (+1 B)     build/ncov/static/js/28.e1da0251.chunk.js
+  27.11 KB (-1 B)     build/ncov/static/js/17.3c5e9e95.chunk.js
+  26.91 KB (+1 B)     build/ncov/static/js/31.e0217c55.chunk.js
+  26.63 KB            build/ncov/static/js/24.2d8b3fd5.chunk.js
+  25.9 KB (+1 B)      build/ncov/static/js/13.b2de3d89.chunk.js
+  25.62 KB (-1 B)     build/ncov/static/js/43.9a3522bc.chunk.js
+  23.54 KB (+1 B)     build/ncov/static/js/27.aa135645.chunk.js
+  22.9 KB             build/ncov/static/js/20.286f9673.chunk.js
+  22.67 KB (+5 B)     build/ncov/static/js/23.58afe33f.chunk.js
+  22.17 KB            build/ncov/static/js/14.1d2c080e.chunk.js
+  21.36 KB (+1 B)     build/ncov/static/js/22.78ff51bd.chunk.js
+  19.46 KB (-2 B)     build/ncov/static/js/18.63baf918.chunk.js
+  19.41 KB (+1 B)     build/ncov/static/js/5.e599508b.chunk.js
+  18.9 KB             build/ncov/static/js/35.ec7c646b.chunk.js
+  18.84 KB (+1 B)     build/ncov/static/js/26.f14c3276.chunk.js
+  18.55 KB (-1 B)     build/ncov/static/js/10.22656efe.chunk.js
+  16.04 KB (-1 B)     build/ncov/static/js/19.576a202b.chunk.js
+  14.13 KB (+3 B)     build/ncov/static/js/25.d2a186c1.chunk.js
+  14.05 KB            build/ncov/static/js/34.3fbe0ff8.chunk.js
+  10.86 KB            build/ncov/static/js/12.58655442.chunk.js
+  9.52 KB (-5 B)      build/ncov/static/js/6.3a3a4e73.chunk.js
+  8 KB                build/ncov/static/js/37.d46e8bb1.chunk.js
+  7.61 KB             build/ncov/static/js/30.a9cd2ca5.chunk.js
+  6.7 KB              build/ncov/static/js/38.5dc2a2d5.chunk.js
+  5.97 KB (+1 B)      build/ncov/static/js/33.77baabaf.chunk.js
+  4.79 KB             build/ncov/static/js/39.a35465af.chunk.js
+  4.3 KB              build/ncov/static/css/main.0890d271.chunk.css
+  1.52 KB (-4 B)      build/ncov/static/js/runtime-main.ece86086.js
+  1.34 KB (+1 B)      build/ncov/static/js/7.b9bf1685.chunk.js
+  816 B               build/ncov/static/js/11.604593d9.chunk.js
+  515 B (-2 B)        build/ncov/static/js/8.c8203c1c.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'seriousIncr': -215, 'curedCount': 53817, 'confirmedIncr': 149, 'deadCount': 3045, 'modifyTime': 1583475509000, 'curedIncr': 1708, 'suspectedCount': 482, 'currentConfirmedIncr': -1589, 'deadIncr': 30, 'confirmedCount': 80714, 'seriousCount': 5737, 'suspectedIncr': 102, 'currentConfirmedCount': 23852}
+Done.
+https://img1.dxycdn.com/2020/0306/135/3400487700355736491-135.png
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+https://img1.dxycdn.com/2020/0306/596/3400487777664916408-135.png
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+https://img1.dxycdn.com/2020/0306/538/3400486396833113603-135.png
+https://img1.dxycdn.com/2020/0306/668/3400486409718015946-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/135/3400487700355736491-135.png
+(1646, 884)
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+(1654, 885)
+https://img1.dxycdn.com/2020/0306/596/3400487777664916408-135.png
+(1654, 886)
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/538/3400486396833113603-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/668/3400486409718015946-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+up to date in 10.04s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.31 KB (+108 B)  build/ncov/static/js/main.fc0e2770.chunk.js
+  196.83 KB (-291 B)  build/ncov/static/js/data.d0a56099.chunk.js
+  123.13 KB (-4 B)    build/ncov/static/js/41.9086cc5a.chunk.js
+  109.8 KB (-10 B)    build/ncov/static/js/0.a2fc546a.chunk.js
+  54.55 KB (-2 B)     build/ncov/static/js/40.f36e54c8.chunk.js
+  47.5 KB (-1 B)      build/ncov/static/js/36.1dce660a.chunk.js
+  46.86 KB (+1 B)     build/ncov/static/js/9.245edc4f.chunk.js
+  44.39 KB (-1 B)     build/ncov/static/js/21.6c1207f9.chunk.js
+  37.95 KB (+1 B)     build/ncov/static/js/16.a66d5e8c.chunk.js
+  37.94 KB            build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB (-1 B)     build/ncov/static/js/42.a9c91c68.chunk.js
+  36.05 KB (+2 B)     build/ncov/static/js/29.180ffe49.chunk.js
+  28.64 KB (-1 B)     build/ncov/static/js/15.392612a7.chunk.js
+  28.38 KB            build/ncov/static/js/32.8e2e1157.chunk.js
+  27.55 KB (-2 B)     build/ncov/static/js/28.7249ba9e.chunk.js
+  27.11 KB (+1 B)     build/ncov/static/js/17.a4a82f04.chunk.js
+  26.91 KB (-2 B)     build/ncov/static/js/31.ba0b7597.chunk.js
+  26.63 KB (+1 B)     build/ncov/static/js/24.986e1868.chunk.js
+  25.9 KB (-1 B)      build/ncov/static/js/13.46adf39c.chunk.js
+  25.62 KB            build/ncov/static/js/43.f98e6db5.chunk.js
+  23.54 KB (-1 B)     build/ncov/static/js/27.2fde7a5c.chunk.js
+  22.9 KB             build/ncov/static/js/20.3719ad3c.chunk.js
+  22.67 KB (-1 B)     build/ncov/static/js/23.e479c03c.chunk.js
+  22.17 KB            build/ncov/static/js/14.4d9663fc.chunk.js
+  21.36 KB (-1 B)     build/ncov/static/js/22.4c450a1f.chunk.js
+  19.46 KB (+2 B)     build/ncov/static/js/18.483ffc7b.chunk.js
+  19.41 KB (-4 B)     build/ncov/static/js/5.c5f67563.chunk.js
+  18.9 KB             build/ncov/static/js/35.d6a22e13.chunk.js
+  18.84 KB            build/ncov/static/js/26.84d8bf7b.chunk.js
+  18.55 KB            build/ncov/static/js/10.5bd2317f.chunk.js
+  16.04 KB (+1 B)     build/ncov/static/js/19.d0bed11d.chunk.js
+  14.13 KB (-3 B)     build/ncov/static/js/25.84a1abc0.chunk.js
+  14.05 KB (-2 B)     build/ncov/static/js/34.5245eac9.chunk.js
+  10.86 KB            build/ncov/static/js/12.12f3ee72.chunk.js
+  9.53 KB (+7 B)      build/ncov/static/js/6.3e1d465a.chunk.js
+  8 KB                build/ncov/static/js/37.ecd6f3e4.chunk.js
+  7.61 KB (-2 B)      build/ncov/static/js/30.9c130041.chunk.js
+  6.7 KB              build/ncov/static/js/38.0a52eec6.chunk.js
+  5.96 KB (-2 B)      build/ncov/static/js/33.4817525c.chunk.js
+  4.79 KB (+1 B)      build/ncov/static/js/39.3e48370a.chunk.js
+  4.3 KB              build/ncov/static/css/main.0890d271.chunk.css
+  1.52 KB (+2 B)      build/ncov/static/js/runtime-main.45e7e16a.js
+  1.34 KB (-3 B)      build/ncov/static/js/7.d8e6218d.chunk.js
+  815 B (-1 B)        build/ncov/static/js/11.52e166f4.chunk.js
+  515 B               build/ncov/static/js/8.3d993752.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'seriousCount': 5737, 'suspectedIncr': 102, 'currentConfirmedCount': 23852, 'curedIncr': 1708, 'confirmedCount': 80714, 'confirmedIncr': 149, 'modifyTime': 1583477807000, 'deadIncr': 30, 'curedCount': 53817, 'suspectedCount': 482, 'seriousIncr': -215, 'currentConfirmedIncr': -1589, 'deadCount': 3045}
+Done.
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+(1646, 883)
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+(1654, 885)
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+(1655, 885)
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+up to date in 10.327s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.31 KB           build/ncov/static/js/main.fc0e2770.chunk.js
+  196.39 KB (-495 B)  build/ncov/static/js/data.3918d6dc.chunk.js
+  123.13 KB           build/ncov/static/js/41.9086cc5a.chunk.js
+  109.8 KB            build/ncov/static/js/0.a2fc546a.chunk.js
+  54.55 KB            build/ncov/static/js/40.f36e54c8.chunk.js
+  47.5 KB             build/ncov/static/js/36.1dce660a.chunk.js
+  46.86 KB            build/ncov/static/js/9.245edc4f.chunk.js
+  44.39 KB            build/ncov/static/js/21.6c1207f9.chunk.js
+  37.95 KB            build/ncov/static/js/16.a66d5e8c.chunk.js
+  37.94 KB            build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB            build/ncov/static/js/42.a9c91c68.chunk.js
+  36.05 KB            build/ncov/static/js/29.180ffe49.chunk.js
+  28.64 KB            build/ncov/static/js/15.392612a7.chunk.js
+  28.38 KB            build/ncov/static/js/32.8e2e1157.chunk.js
+  27.55 KB            build/ncov/static/js/28.7249ba9e.chunk.js
+  27.11 KB            build/ncov/static/js/17.a4a82f04.chunk.js
+  26.91 KB            build/ncov/static/js/31.ba0b7597.chunk.js
+  26.63 KB            build/ncov/static/js/24.986e1868.chunk.js
+  25.9 KB             build/ncov/static/js/13.46adf39c.chunk.js
+  25.62 KB            build/ncov/static/js/43.f98e6db5.chunk.js
+  23.54 KB            build/ncov/static/js/27.2fde7a5c.chunk.js
+  22.9 KB             build/ncov/static/js/20.3719ad3c.chunk.js
+  22.67 KB            build/ncov/static/js/23.e479c03c.chunk.js
+  22.17 KB            build/ncov/static/js/14.4d9663fc.chunk.js
+  21.36 KB            build/ncov/static/js/22.4c450a1f.chunk.js
+  19.46 KB            build/ncov/static/js/18.483ffc7b.chunk.js
+  19.41 KB            build/ncov/static/js/5.c5f67563.chunk.js
+  18.9 KB             build/ncov/static/js/35.d6a22e13.chunk.js
+  18.84 KB            build/ncov/static/js/26.84d8bf7b.chunk.js
+  18.55 KB            build/ncov/static/js/10.5bd2317f.chunk.js
+  16.04 KB            build/ncov/static/js/19.d0bed11d.chunk.js
+  14.13 KB            build/ncov/static/js/25.84a1abc0.chunk.js
+  14.05 KB            build/ncov/static/js/34.5245eac9.chunk.js
+  10.86 KB            build/ncov/static/js/12.12f3ee72.chunk.js
+  9.53 KB             build/ncov/static/js/6.3e1d465a.chunk.js
+  8 KB                build/ncov/static/js/37.ecd6f3e4.chunk.js
+  7.61 KB             build/ncov/static/js/30.9c130041.chunk.js
+  6.7 KB              build/ncov/static/js/38.0a52eec6.chunk.js
+  5.96 KB             build/ncov/static/js/33.4817525c.chunk.js
+  4.79 KB             build/ncov/static/js/39.3e48370a.chunk.js
+  4.3 KB              build/ncov/static/css/main.0890d271.chunk.css
+  1.52 KB             build/ncov/static/js/runtime-main.45e7e16a.js
+  1.34 KB             build/ncov/static/js/7.d8e6218d.chunk.js
+  815 B               build/ncov/static/js/11.52e166f4.chunk.js
+  515 B               build/ncov/static/js/8.3d993752.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'deadCount': 3045, 'currentConfirmedIncr': -1606, 'curedIncr': 1725, 'currentConfirmedCount': 23835, 'suspectedIncr': 102, 'suspectedCount': 482, 'seriousIncr': -215, 'confirmedCount': 80714, 'modifyTime': 1583478633000, 'deadIncr': 30, 'confirmedIncr': 149, 'seriousCount': 5737, 'curedCount': 53834}
+Done.
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+(1646, 883)
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+(1654, 885)
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+(1655, 885)
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+up to date in 10.403s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.31 KB           build/ncov/static/js/main.fc0e2770.chunk.js
+  196.25 KB (-139 B)  build/ncov/static/js/data.47922eba.chunk.js
+  123.13 KB           build/ncov/static/js/41.9086cc5a.chunk.js
+  109.8 KB            build/ncov/static/js/0.a2fc546a.chunk.js
+  54.55 KB            build/ncov/static/js/40.f36e54c8.chunk.js
+  47.5 KB             build/ncov/static/js/36.1dce660a.chunk.js
+  46.86 KB            build/ncov/static/js/9.245edc4f.chunk.js
+  44.39 KB            build/ncov/static/js/21.6c1207f9.chunk.js
+  37.95 KB            build/ncov/static/js/16.a66d5e8c.chunk.js
+  37.94 KB            build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB            build/ncov/static/js/42.a9c91c68.chunk.js
+  36.05 KB            build/ncov/static/js/29.180ffe49.chunk.js
+  28.64 KB            build/ncov/static/js/15.392612a7.chunk.js
+  28.38 KB            build/ncov/static/js/32.8e2e1157.chunk.js
+  27.55 KB            build/ncov/static/js/28.7249ba9e.chunk.js
+  27.11 KB            build/ncov/static/js/17.a4a82f04.chunk.js
+  26.91 KB            build/ncov/static/js/31.ba0b7597.chunk.js
+  26.63 KB            build/ncov/static/js/24.986e1868.chunk.js
+  25.9 KB             build/ncov/static/js/13.46adf39c.chunk.js
+  25.62 KB            build/ncov/static/js/43.f98e6db5.chunk.js
+  23.54 KB            build/ncov/static/js/27.2fde7a5c.chunk.js
+  22.9 KB             build/ncov/static/js/20.3719ad3c.chunk.js
+  22.67 KB            build/ncov/static/js/23.e479c03c.chunk.js
+  22.17 KB            build/ncov/static/js/14.4d9663fc.chunk.js
+  21.36 KB            build/ncov/static/js/22.4c450a1f.chunk.js
+  19.46 KB            build/ncov/static/js/18.483ffc7b.chunk.js
+  19.41 KB            build/ncov/static/js/5.c5f67563.chunk.js
+  18.9 KB             build/ncov/static/js/35.d6a22e13.chunk.js
+  18.84 KB            build/ncov/static/js/26.84d8bf7b.chunk.js
+  18.55 KB            build/ncov/static/js/10.5bd2317f.chunk.js
+  16.04 KB            build/ncov/static/js/19.d0bed11d.chunk.js
+  14.13 KB            build/ncov/static/js/25.84a1abc0.chunk.js
+  14.05 KB            build/ncov/static/js/34.5245eac9.chunk.js
+  10.86 KB            build/ncov/static/js/12.12f3ee72.chunk.js
+  9.53 KB             build/ncov/static/js/6.3e1d465a.chunk.js
+  8 KB                build/ncov/static/js/37.ecd6f3e4.chunk.js
+  7.61 KB             build/ncov/static/js/30.9c130041.chunk.js
+  6.7 KB              build/ncov/static/js/38.0a52eec6.chunk.js
+  5.96 KB             build/ncov/static/js/33.4817525c.chunk.js
+  4.79 KB             build/ncov/static/js/39.3e48370a.chunk.js
+  4.3 KB              build/ncov/static/css/main.0890d271.chunk.css
+  1.52 KB             build/ncov/static/js/runtime-main.45e7e16a.js
+  1.34 KB             build/ncov/static/js/7.d8e6218d.chunk.js
+  815 B               build/ncov/static/js/11.52e166f4.chunk.js
+  515 B               build/ncov/static/js/8.3d993752.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'seriousIncr': -215, 'suspectedCount': 482, 'suspectedIncr': 102, 'currentConfirmedCount': 23832, 'curedIncr': 1728, 'confirmedCount': 80714, 'curedCount': 53837, 'deadCount': 3045, 'seriousCount': 5737, 'modifyTime': 1583481117000, 'confirmedIncr': 149, 'currentConfirmedIncr': -1609, 'deadIncr': 30}
+Done.
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+(1646, 883)
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+(1654, 885)
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+(1655, 885)
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+up to date in 10.171s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.31 KB          build/ncov/static/js/main.fc0e2770.chunk.js
+  195.8 KB (-461 B)  build/ncov/static/js/data.00f61c0d.chunk.js
+  123.13 KB          build/ncov/static/js/41.9086cc5a.chunk.js
+  109.8 KB           build/ncov/static/js/0.a2fc546a.chunk.js
+  54.55 KB           build/ncov/static/js/40.f36e54c8.chunk.js
+  47.5 KB            build/ncov/static/js/36.1dce660a.chunk.js
+  46.86 KB           build/ncov/static/js/9.245edc4f.chunk.js
+  44.39 KB           build/ncov/static/js/21.6c1207f9.chunk.js
+  37.95 KB           build/ncov/static/js/16.a66d5e8c.chunk.js
+  37.94 KB           build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB           build/ncov/static/js/42.a9c91c68.chunk.js
+  36.05 KB           build/ncov/static/js/29.180ffe49.chunk.js
+  28.64 KB           build/ncov/static/js/15.392612a7.chunk.js
+  28.38 KB           build/ncov/static/js/32.8e2e1157.chunk.js
+  27.55 KB           build/ncov/static/js/28.7249ba9e.chunk.js
+  27.11 KB           build/ncov/static/js/17.a4a82f04.chunk.js
+  26.91 KB           build/ncov/static/js/31.ba0b7597.chunk.js
+  26.63 KB           build/ncov/static/js/24.986e1868.chunk.js
+  25.9 KB            build/ncov/static/js/13.46adf39c.chunk.js
+  25.62 KB           build/ncov/static/js/43.f98e6db5.chunk.js
+  23.54 KB           build/ncov/static/js/27.2fde7a5c.chunk.js
+  22.9 KB            build/ncov/static/js/20.3719ad3c.chunk.js
+  22.67 KB           build/ncov/static/js/23.e479c03c.chunk.js
+  22.17 KB           build/ncov/static/js/14.4d9663fc.chunk.js
+  21.36 KB           build/ncov/static/js/22.4c450a1f.chunk.js
+  19.46 KB           build/ncov/static/js/18.483ffc7b.chunk.js
+  19.41 KB           build/ncov/static/js/5.c5f67563.chunk.js
+  18.9 KB            build/ncov/static/js/35.d6a22e13.chunk.js
+  18.84 KB           build/ncov/static/js/26.84d8bf7b.chunk.js
+  18.55 KB           build/ncov/static/js/10.5bd2317f.chunk.js
+  16.04 KB           build/ncov/static/js/19.d0bed11d.chunk.js
+  14.13 KB           build/ncov/static/js/25.84a1abc0.chunk.js
+  14.05 KB           build/ncov/static/js/34.5245eac9.chunk.js
+  10.86 KB           build/ncov/static/js/12.12f3ee72.chunk.js
+  9.53 KB            build/ncov/static/js/6.3e1d465a.chunk.js
+  8 KB               build/ncov/static/js/37.ecd6f3e4.chunk.js
+  7.61 KB            build/ncov/static/js/30.9c130041.chunk.js
+  6.7 KB             build/ncov/static/js/38.0a52eec6.chunk.js
+  5.96 KB            build/ncov/static/js/33.4817525c.chunk.js
+  4.79 KB            build/ncov/static/js/39.3e48370a.chunk.js
+  4.3 KB             build/ncov/static/css/main.0890d271.chunk.css
+  1.52 KB            build/ncov/static/js/runtime-main.45e7e16a.js
+  1.34 KB            build/ncov/static/js/7.d8e6218d.chunk.js
+  815 B              build/ncov/static/js/11.52e166f4.chunk.js
+  515 B              build/ncov/static/js/8.3d993752.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'curedCount': 53837, 'confirmedCount': 80714, 'deadIncr': 30, 'confirmedIncr': 149, 'seriousCount': 5737, 'suspectedIncr': 102, 'modifyTime': 1583483182000, 'curedIncr': 1728, 'suspectedCount': 482, 'seriousIncr': -215, 'currentConfirmedCount': 23832, 'currentConfirmedIncr': -1609, 'deadCount': 3045}
+Done.
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+(1646, 883)
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+(1654, 885)
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+(1655, 885)
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+up to date in 10.591s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.31 KB           build/ncov/static/js/main.fc0e2770.chunk.js
+  195.98 KB (+176 B)  build/ncov/static/js/data.d10f5706.chunk.js
+  123.13 KB           build/ncov/static/js/41.9086cc5a.chunk.js
+  109.8 KB            build/ncov/static/js/0.a2fc546a.chunk.js
+  54.55 KB            build/ncov/static/js/40.f36e54c8.chunk.js
+  47.5 KB             build/ncov/static/js/36.1dce660a.chunk.js
+  46.86 KB            build/ncov/static/js/9.245edc4f.chunk.js
+  44.39 KB            build/ncov/static/js/21.6c1207f9.chunk.js
+  37.95 KB            build/ncov/static/js/16.a66d5e8c.chunk.js
+  37.94 KB            build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB            build/ncov/static/js/42.a9c91c68.chunk.js
+  36.05 KB            build/ncov/static/js/29.180ffe49.chunk.js
+  28.64 KB            build/ncov/static/js/15.392612a7.chunk.js
+  28.38 KB            build/ncov/static/js/32.8e2e1157.chunk.js
+  27.55 KB            build/ncov/static/js/28.7249ba9e.chunk.js
+  27.11 KB            build/ncov/static/js/17.a4a82f04.chunk.js
+  26.91 KB            build/ncov/static/js/31.ba0b7597.chunk.js
+  26.63 KB            build/ncov/static/js/24.986e1868.chunk.js
+  25.9 KB             build/ncov/static/js/13.46adf39c.chunk.js
+  25.62 KB            build/ncov/static/js/43.f98e6db5.chunk.js
+  23.54 KB            build/ncov/static/js/27.2fde7a5c.chunk.js
+  22.9 KB             build/ncov/static/js/20.3719ad3c.chunk.js
+  22.67 KB            build/ncov/static/js/23.e479c03c.chunk.js
+  22.17 KB            build/ncov/static/js/14.4d9663fc.chunk.js
+  21.36 KB            build/ncov/static/js/22.4c450a1f.chunk.js
+  19.46 KB            build/ncov/static/js/18.483ffc7b.chunk.js
+  19.41 KB            build/ncov/static/js/5.c5f67563.chunk.js
+  18.9 KB             build/ncov/static/js/35.d6a22e13.chunk.js
+  18.84 KB            build/ncov/static/js/26.84d8bf7b.chunk.js
+  18.55 KB            build/ncov/static/js/10.5bd2317f.chunk.js
+  16.04 KB            build/ncov/static/js/19.d0bed11d.chunk.js
+  14.13 KB            build/ncov/static/js/25.84a1abc0.chunk.js
+  14.05 KB            build/ncov/static/js/34.5245eac9.chunk.js
+  10.86 KB            build/ncov/static/js/12.12f3ee72.chunk.js
+  9.53 KB             build/ncov/static/js/6.3e1d465a.chunk.js
+  8 KB                build/ncov/static/js/37.ecd6f3e4.chunk.js
+  7.61 KB             build/ncov/static/js/30.9c130041.chunk.js
+  6.7 KB              build/ncov/static/js/38.0a52eec6.chunk.js
+  5.96 KB             build/ncov/static/js/33.4817525c.chunk.js
+  4.79 KB             build/ncov/static/js/39.3e48370a.chunk.js
+  4.3 KB              build/ncov/static/css/main.0890d271.chunk.css
+  1.52 KB             build/ncov/static/js/runtime-main.45e7e16a.js
+  1.34 KB             build/ncov/static/js/7.d8e6218d.chunk.js
+  815 B               build/ncov/static/js/11.52e166f4.chunk.js
+  515 B               build/ncov/static/js/8.3d993752.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'deadCount': 3045, 'confirmedCount': 80714, 'confirmedIncr': 149, 'suspectedCount': 482, 'currentConfirmedIncr': -1609, 'deadIncr': 30, 'curedIncr': 1728, 'seriousCount': 5737, 'modifyTime': 1583483182000, 'currentConfirmedCount': 23832, 'suspectedIncr': 102, 'curedCount': 53837, 'seriousIncr': -215}
+Done.
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+(1646, 883)
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+(1654, 885)
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+(1655, 885)
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+GB Done.0
+up to date in 10.284s
+
+44 packages are looking for funding
+  run `npm fund` for details
+
+
+> ncov@0.1.0 build /home/ubuntu/2019-ncov-BDBC
+> node scripts/build.js
+
+Creating an optimized production build...
+Compiled with warnings.
+
+./src/Predict.js
+  Line 1:17:  'useEffect' is defined but never used  no-unused-vars
+  Line 1:28:  'useState' is defined but never used   no-unused-vars
+
+./src/component/NavFab/index.js
+  Line 55:145:  React Hook useMemo has a missing dependency: 'NavItems'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+./src/App.js
+  Line 6:10:    'Carousel' is defined but never used                                                                       no-unused-vars
+  Line 30:8:    'Person' is defined but never used                                                                         no-unused-vars
+  Line 46:7:    'Brief' is assigned a value but never used                                                                 no-unused-vars
+  Line 108:36:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 236:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 362:7:   img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+  Line 519:7:   <iframe> elements must have a unique title property                                                        jsx-a11y/iframe-has-title
+
+./src/person.js
+  Line 8:9:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+File sizes after gzip:
+
+  220.31 KB           build/ncov/static/js/main.fc0e2770.chunk.js
+  195.63 KB (-356 B)  build/ncov/static/js/data.080fa4da.chunk.js
+  123.13 KB           build/ncov/static/js/41.9086cc5a.chunk.js
+  109.8 KB            build/ncov/static/js/0.a2fc546a.chunk.js
+  54.55 KB            build/ncov/static/js/40.f36e54c8.chunk.js
+  47.5 KB             build/ncov/static/js/36.1dce660a.chunk.js
+  46.86 KB            build/ncov/static/js/9.245edc4f.chunk.js
+  44.39 KB            build/ncov/static/js/21.6c1207f9.chunk.js
+  37.95 KB            build/ncov/static/js/16.a66d5e8c.chunk.js
+  37.94 KB            build/ncov/static/js/react.43a733eb.chunk.js
+  36.09 KB            build/ncov/static/js/42.a9c91c68.chunk.js
+  36.05 KB            build/ncov/static/js/29.180ffe49.chunk.js
+  28.64 KB            build/ncov/static/js/15.392612a7.chunk.js
+  28.38 KB            build/ncov/static/js/32.8e2e1157.chunk.js
+  27.55 KB            build/ncov/static/js/28.7249ba9e.chunk.js
+  27.11 KB            build/ncov/static/js/17.a4a82f04.chunk.js
+  26.91 KB            build/ncov/static/js/31.ba0b7597.chunk.js
+  26.63 KB            build/ncov/static/js/24.986e1868.chunk.js
+  25.9 KB             build/ncov/static/js/13.46adf39c.chunk.js
+  25.62 KB            build/ncov/static/js/43.f98e6db5.chunk.js
+  23.54 KB            build/ncov/static/js/27.2fde7a5c.chunk.js
+  22.9 KB             build/ncov/static/js/20.3719ad3c.chunk.js
+  22.67 KB            build/ncov/static/js/23.e479c03c.chunk.js
+  22.17 KB            build/ncov/static/js/14.4d9663fc.chunk.js
+  21.36 KB            build/ncov/static/js/22.4c450a1f.chunk.js
+  19.46 KB            build/ncov/static/js/18.483ffc7b.chunk.js
+  19.41 KB            build/ncov/static/js/5.c5f67563.chunk.js
+  18.9 KB             build/ncov/static/js/35.d6a22e13.chunk.js
+  18.84 KB            build/ncov/static/js/26.84d8bf7b.chunk.js
+  18.55 KB            build/ncov/static/js/10.5bd2317f.chunk.js
+  16.04 KB            build/ncov/static/js/19.d0bed11d.chunk.js
+  14.13 KB            build/ncov/static/js/25.84a1abc0.chunk.js
+  14.05 KB            build/ncov/static/js/34.5245eac9.chunk.js
+  10.86 KB            build/ncov/static/js/12.12f3ee72.chunk.js
+  9.53 KB             build/ncov/static/js/6.3e1d465a.chunk.js
+  8 KB                build/ncov/static/js/37.ecd6f3e4.chunk.js
+  7.61 KB             build/ncov/static/js/30.9c130041.chunk.js
+  6.7 KB              build/ncov/static/js/38.0a52eec6.chunk.js
+  5.96 KB             build/ncov/static/js/33.4817525c.chunk.js
+  4.79 KB             build/ncov/static/js/39.3e48370a.chunk.js
+  4.3 KB              build/ncov/static/css/main.0890d271.chunk.css
+  1.52 KB             build/ncov/static/js/runtime-main.45e7e16a.js
+  1.34 KB             build/ncov/static/js/7.d8e6218d.chunk.js
+  815 B               build/ncov/static/js/11.52e166f4.chunk.js
+  515 B               build/ncov/static/js/8.3d993752.chunk.js
+
+The project was built assuming it is hosted at the server root.
+You can control this with the homepage field in your package.json.
+For example, add this to build it for GitHub Pages:
+
+  "homepage" : "http://myname.github.io/myapp",
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  yarn global add serve
+  serve -s build
+
+Find out more about deployment here:
+
+  bit.ly/CRA-deploy
+
+加载入文件完成...
+{'seriousCount': 5737, 'suspectedIncr': 102, 'modifyTime': 1583485888000, 'seriousIncr': -215, 'suspectedCount': 482, 'confirmedIncr': 149, 'deadIncr': 30, 'curedCount': 53837, 'curedIncr': 1728, 'confirmedCount': 80714, 'currentConfirmedIncr': -1609, 'currentConfirmedCount': 23832, 'deadCount': 3045}
+Done.
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+DXY Data update.0
+n163 Data update.0
+加载入文件完成...
+['https://img1.dxycdn.com/2020/0211/763/3395998884005602079-135.png', 'https://img1.dxycdn.com/2020/0211/362/3395998896890788910-135.png', 'https://img1.dxycdn.com/2020/0211/365/3395998905480724211-135.png', 'https://img1.dxycdn.com/2020/0211/364/3395998916217859778-135.png', 'https://img1.dxycdn.com/2020/0211/922/3395998929103046444-135.png', 'https://img1.dxycdn.com/2020/0211/089/3395998939840182072-135.png']
+https://img1.dxycdn.com/2020/0306/183/3400489132727383584-135.png
+(1646, 883)
+https://img1.dxycdn.com/2020/0306/653/3400487766927497685-135.png
+(1654, 885)
+https://img1.dxycdn.com/2020/0306/985/3400489233658885439-135.png
+(1655, 885)
+https://img1.dxycdn.com/2020/0306/925/3400487803434721284-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/175/3400487816319857732-135.png
+(1831, 900)
+https://img1.dxycdn.com/2020/0306/768/3400489255133955947-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/884/3400489268018858436-135.png
+(1650, 900)
+https://img1.dxycdn.com/2020/0306/937/3400457407951513355-135.png
+(1695, 929)
+https://img1.dxycdn.com/2020/0306/032/3400457491703379802-135.png
+(1733, 902)
+https://img1.dxycdn.com/2020/0306/625/3400457511030733392-135.png
+(1652, 902)
+安装依赖0
+build complete0
+Done.0
+GB Done.0
+GB Done.0
