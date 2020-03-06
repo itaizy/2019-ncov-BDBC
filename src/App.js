@@ -196,7 +196,7 @@ function Summary () {
     <div className="card info">
       <h2 id="Summary">资讯汇总</h2>
       <List>
-        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Search.png')} onClick={() => {window.location.href="https://h5.scimall.org.cn/yiqing/zt"}}>导航 | 科协科界</Item>
+        <Item id="Trip" arrow="horizontal" thumb={require('./icon/Search.png')} onClick={() => {window.location.href="https://h5.scimall.org.cn/yiqing/zt"}}>导航 | 科协科界疫情信息导航合辑</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Search.png')} onClick={() => {window.location.href="http://2019ncov.nosugartech.com/"}}>同乘 | 确诊患者同行查询工具</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Fake.png')} onClick={() => {window.location.href="https://vp.fact.qq.com/home"}}>辟谣 | 新型冠状病毒实时辟谣</Item>
         <Item id="Trip" arrow="horizontal" thumb={require('./icon/Help.png')} onClick={() => {window.location.href="https://promo.guahao.com/topic/pneumonia"}}>救助 | 微医抗击疫情实时救助</Item>
