@@ -12,6 +12,7 @@ import policy_bj from './data/zc_bj'
 import NavFab from "./component/NavFab"
 import predictData from './data/predictData'
 import n163 from './data/n163'
+import newallzc from './data/policy_2020.2.18'
 
 // import Carousel from 'antd-mobile/lib/carousel';  // 加载 JS
 import 'antd-mobile/lib/carousel/style/css';        // 加载 CSS
@@ -153,7 +154,8 @@ function Policys () {
       <h2 id="Policy">国务院政策</h2>
       <List>
         {
-          policy_zhy
+          newallzc
+          .filter((v) => v.publisher.indexOf('国务院') != -1 || v.publisher.indexOf('商务部') != -1)
           .slice(0, len_zhy)
           .map((n, index) => 
             <Item id={index} arrow="horizontal" ><a href={n.link}>{n.title + n.link}</a></Item>
@@ -170,7 +172,8 @@ function Policys () {
       <h2 id="Policy">北京政策</h2>
       <List>
         {
-        policy_bj
+        newallzc
+        .filter((v) => v.publisher.indexOf('北京') != -1)
         .slice(0, len_bj)
         .map((n, index) => 
           <Item id={index} arrow="horizontal" ><a href={n.link}>{n.title + n.link}</a></Item>
@@ -181,7 +184,7 @@ function Policys () {
       <br />
       <h2 id="Policy">政策扶持</h2>
       {
-        policy
+        newallzc
         .slice(0, len)
         .map(n => <OnePolicy {...n} key={n.index}/>)
       }
