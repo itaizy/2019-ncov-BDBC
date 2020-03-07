@@ -68,3 +68,27 @@ val = os.system('/usr/bin/python3 gb.py')
 print('GB Done.' + str(val))
 val = os.system('cp -r data/ ../build/ncov/')
 print('GB Done.' + str(val))
+
+f = open('./data/policy_2020.2.18.json')
+fg = open('../build/ncov/data/zc_zhy.json', 'w')
+fb = open('../build/ncov/data/zc_bj.json', 'w')
+fd = open('../build/ncov/data/zc_df.json', 'w')
+jd = json.load(f)
+gwy = []
+bj = []
+df = []
+for line in jd:
+    if '国务院' in line['publisher'] or '商务部' in line['publisher']:
+        gwy.append(line)
+    elif '北京' in line['publisher']:
+        bj.append(line)
+    else:
+        df.append(line)
+json.dump(gwy, fg)
+json.dump(bj, fb)
+json.dump(df, fd)
+f.close()
+fg.close()
+fb.close()
+fd.close()
+
