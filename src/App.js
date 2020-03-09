@@ -35,7 +35,7 @@ import Person from './person'
 import './App.css'
 import axios from 'axios'
 import TotalTag from "./TotalTag";
-import nameMap from './data/nameMap.json'
+import nameMap from './data/nameMap'
 // import { green, red } from '_ansi-colors@3.2.4@ansi-colors'
 
 dayjs.extend(relativeTime)
@@ -395,7 +395,7 @@ function Area ({ area, onChange }) {
 function WorldArea ({ area, onChange }) {
   const renderArea = () => {
     return area.map(x => (
-      <div className="province" key={x.name || x.cityName} onClick={() => {}}>
+      <div className="province" key={x.provinceName} onClick={() => {}}>
         <div className={`area ${x.provinceName ? 'active' : ''}`}>{x.provinceName}
         </div>
         <div className="confirmed">{ x.confirmedCount }</div>
@@ -582,6 +582,7 @@ function App () {
         </Suspense>
         <WorldArea area={Worldarea} onChange={_setCountry} />
       </div>
+      
 
 
       <div className="card" id="Predict">
