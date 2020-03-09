@@ -562,7 +562,7 @@ function App () {
       </div>
 
       <div className="card" id="WorldMap">
-        <h2>国外疫情地图 { country ? `· ${country.name}` : "" }
+        <h2>世界疫情地图 { country ? `· ${country.name}` : "" }
         {
           province ? <small
             onClick={() => _setCountry(null)}
@@ -570,7 +570,7 @@ function App () {
         }
         </h2>
         {/* <h3>点击省市查看详情</h3> */}
-        <WorldStat { ...all.foreignStatistics } name={'国外'} modifyTime={all.modifyTime} />
+        <WorldStat { ...all.foreignStatistics } name={'世界'} modifyTime={all.modifyTime} />
         <Suspense fallback={<div className="loading">地图正在加载中...</div>}>
           <WorldMap province={country} data={Worlddata} onClick= {(name) => {}}/>
           {/*
