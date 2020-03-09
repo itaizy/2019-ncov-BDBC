@@ -62,6 +62,7 @@ const loadCityList = async data => {
   fs.writeFileSync('./src/data/area.json', result)
 }
 
+
 let times = 0
 async function request () {
   return axios.request('https://3g.dxy.cn/newh5/view/pneumonia').then(({ data: html }) => {

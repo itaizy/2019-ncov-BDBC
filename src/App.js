@@ -1,4 +1,5 @@
 import React, { useState, Suspense, useEffect  } from 'react'
+import ReactDOM from 'react-dom';
 import keyBy from 'lodash.keyby'
 import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
@@ -6,6 +7,7 @@ import relativeTime from 'dayjs/plugin/relativeTime'
 import { Carousel, WingBlank, List, Card, WhiteSpace } from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
+import countries from './data/countries'
 import policy from './data/zc_new'
 import policy_zhy from './data/zc_zhy'
 import policy_bj from './data/zc_bj'
@@ -33,11 +35,13 @@ import Person from './person'
 import './App.css'
 import axios from 'axios'
 import TotalTag from "./TotalTag";
+import nameMap from './data/nameMap.json'
 // import { green, red } from '_ansi-colors@3.2.4@ansi-colors'
 
 dayjs.extend(relativeTime)
 
 const Map = React.lazy(() => import('./Map'))
+const WorldMap = React.lazy(() => import('./WorldMap'))
 const Predict = React.lazy(() => import('./Predict'))
 
 const provincesByName = keyBy(provinces, 'name')
@@ -285,6 +289,34 @@ function Stat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCou
   )
 }
 
+function WorldStat ({ modifyTime, confirmedCount, suspectedCount, deadCount, curedCount, name }) {
+  return (
+    <div>
+      <h3 id="WorldStas">
+        地域 {name ? `: ${name}` : ': 世界'}
+        <span className="due">
+          截止到: {dayjs(modifyTime).format('YYYY-MM-DD HH:mm')}
+        </span>
+      </h3>
+      <div className="row">
+        <Tag number={confirmedCount} className="numberconfirmed">
+          确诊
+        </Tag>
+        <Tag number={suspectedCount || '-'} className="number">
+          疑似
+        </Tag>
+        <Tag number={deadCount} className="dead">
+          死亡
+        </Tag>
+        <Tag number={curedCount} className="numbercured">
+          治愈
+        </Tag>
+      </div>
+    </div>
+  )
+}
+
+
 function StatIncr ({ modifyTime}) {
   return (
     <div className="card">
@@ -360,6 +392,33 @@ function Area ({ area, onChange }) {
   )
 }
 
+function WorldArea ({ area, onChange }) {
+  const renderArea = () => {
+    return area.map(x => (
+      <div className="province" key={x.name || x.cityName} onClick={() => {}}>
+        <div className={`area ${x.provinceName ? 'active' : ''}`}>{x.provinceName}
+        </div>
+        <div className="confirmed">{ x.confirmedCount }</div>
+        <div className="death">{ x.deadCount }</div>
+        <div className="cured">{ x.curedCount }</div>
+      </div>
+    ))
+  }
+
+  return (
+    <>
+      <div className="province header">
+        <div className="area">地区</div>
+        <div className="confirmed">确诊</div>
+        <div className="death">死亡</div>
+        <div className="cured">治愈</div>
+      </div>
+      { renderArea() }
+    </>
+  )
+}
+
+
 function Header ({ province }) {
   return (
     <header>
@@ -380,7 +439,12 @@ function Header ({ province }) {
 }
 
 function App () {
+
   const [province, _setProvince] = useState(null)
+  const country = null
+  const _setCountry = (p) => {
+    country = p
+  }
   const setProvinceByUrl = () => {
     const p = window.location.pathname.slice(1)
     _setProvince(p ? provincesByPinyin[p] : null)
@@ -414,8 +478,23 @@ function App () {
     value: city.confirmedCount
   }))
 
+  const Worlddata = countries.map(p => ({
+    name: nameMap[p.provinceName],
+    value: p.confirmedCount
+  })).concat([{name: nameMap['中国'],
+            value: all.confirmedCount
+           }])
+  
   const area = province ? provincesByName[province.name].cities : provinces
   const overall = province ? province : all
+
+  const Worldarea = ([{'provinceName': '中国',
+            'confirmedCount': all.confirmedCount,
+            'deadCount': all.deadCount,
+            'curedCount': all.curedCount,
+            'sort': 0
+  }]).concat(countries)
+
 
   return (
     <div>
@@ -481,6 +560,30 @@ function App () {
         </Suspense>
         <Area area={area} onChange={setProvince} />
       </div>
+
+      <div className="card" id="WorldMap">
+        <h2>国外疫情地图 { country ? `· ${country.name}` : "" }
+        {
+          province ? <small
+            onClick={() => _setCountry(null)}
+          >返回世界地图</small> : null
+        }
+        </h2>
+        {/* <h3>点击省市查看详情</h3> */}
+        <WorldStat { ...all.foreignStatistics } name={'国外'} modifyTime={all.modifyTime} />
+        <Suspense fallback={<div className="loading">地图正在加载中...</div>}>
+          <WorldMap province={country} data={Worlddata} onClick= {(name) => {}}/>
+          {/*
+            province ? false :
+              <div className="tip">
+                在地图中点击省份可跳转到相应省份的疫情地图，并查看该省相关的实时动态
+              </div>
+          */ }
+        </Suspense>
+        <WorldArea area={Worldarea} onChange={_setCountry} />
+      </div>
+
+
       <div className="card" id="Predict">
         <h2> 疫情预测（确诊趋势）· 近期</h2>
         <div height="250px">
