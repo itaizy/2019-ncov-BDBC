@@ -158,11 +158,11 @@ function Policys () {
       <h2 id="Policy">国务院政策</h2>
       <List>
         {
-          newallzc
-          .filter((v) => v.publisher.indexOf('国务院') != -1 || v.publisher.indexOf('商务部') != -1)
+          policy_zhy
+          // .filter((v) => v.publisher.indexOf('国务院') != -1 || v.publisher.indexOf('商务部') != -1)
           .slice(0, len_zhy)
           .map((n, index) => 
-            <Item id={index} arrow="horizontal" ><a href={n.link}>{n.title + n.link}</a></Item>
+            <Item id={index} arrow="horizontal" ><a href={n.link}>{n.title}</a></Item>
           )
         }
         {/* {
@@ -176,11 +176,11 @@ function Policys () {
       <h2 id="Policy">北京政策</h2>
       <List>
         {
-        newallzc
-        .filter((v) => v.publisher.indexOf('北京') != -1)
+        policy_bj
+        // .filter((v) => v.publisher.indexOf('北京') != -1)
         .slice(0, len_bj)
         .map((n, index) => 
-          <Item id={index} arrow="horizontal" ><a href={n.link}>{n.title + n.link}</a></Item>
+          <Item id={index} arrow="horizontal" ><a href={n.link}>{n.title}</a></Item>
         )
       }
       </List>

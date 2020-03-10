@@ -1,1157 +1,1331 @@
 [
-    
+    {
+        "title": "关于做好北京市阶段性减免企业社会保险费工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200308_1682614.html",
+        "time": "2020/3/8",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于阶段性减免三项社会保险费和办理缓缴有关事项的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200308_1682600.html",
+        "time": "2020/3/8",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "北京市不动产登记新冠肺炎疫情期间疫情防控和服务复工复产的公告",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200307_1682287.html",
+        "time": "2020/3/7",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于进一步做好疫情防控期间困难群众兜底保障工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200308_1682534.html",
+        "time": "2020/3/6",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于新型冠状病毒肺炎疫情防控期间应急管理部门加强对工业企业防疫工作检查执法有关事项的决定",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200306_1681627.html",
+        "time": "2020/3/6",
+        "location": "国务院",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于新型冠状病毒肺炎疫情防控期间市场监管部门加强相关防疫工作检查执法有关事项的决定",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200306_1681633.html",
+        "time": "2020/3/6",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于深化医疗保障制度改革的意见",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200306_1681223.html",
+        "time": "2020/3/6",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于分区分级精准做好养老服务机构疫情防控与恢复服务秩序工作的指导意见",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200309_1683113.html",
+        "time": "2020/3/5",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "全面落实疫情防控一线城乡社区工作者关心关爱措施",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200305_1679168.html",
+        "time": "2020/3/4",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于阶段性减征职工基本医疗保险单位缴费的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200305_1680784.html",
+        "time": "2020/3/4",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于推进新冠肺炎疫情防控期间开展“互联网+”医保服务的指导意见",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200305_1680948.html",
+        "time": "2020/3/2",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "北京市医疗保障局关于开展“互联网+”医保服务的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200305_1680977.html",
+        "time": "2020/3/2",
+        "location": "国务院",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于分区分级科学做好客运场站和交通运输工具新冠肺炎疫情防控工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200302_1674066.html",
+        "time": "2020/3/2",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于严格落实网约车、顺风车疫情防控管理有关要求的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200302_1673372.html",
+        "time": "2020/3/1",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于对中小微企业贷款实施临时性延期还本付息的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200303_1674394.html",
+        "time": "2020/3/1",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于统筹做好教育系统新冠肺炎疫情防控和教育改革发展工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200301_1673158.html",
+        "time": "2020/2/29",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于进一步规范和加强新冠肺炎流行期间消毒工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200302_1673360.html",
+        "time": "2020/2/29",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "国家发展改革委办公厅 民政部办公厅关于积极发挥行业协会商会作用支持民营中小企业复工复产的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200229_1672981.html",
+        "time": "2020/2/29",
+        "location": "国务院",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于进一步做好民政服务机构疫情防控工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200229_1672978.html",
+        "time": "2020/2/29",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于进一步严格疫情防控有关要求的通告",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200229_1672908.html",
+        "time": "2020/2/28",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于应对疫情影响 加大对个体工商户扶持力度的指导意见",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200302_1673420.html",
+        "time": "2020/2/28",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于分区分级科学做好疫情防控期间城乡道路运输服务保障工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202003/t20200302_1674078.html",
+        "time": "2020/2/28",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于进一步明确劳务派遣机构和人力资源服务机构防疫责任要求的紧急通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200229_1672957.html",
+        "time": "2020/2/28",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于应对新冠肺炎疫情影响做好北京市实体书店扶持工作的紧急通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200228_1670353.html",
+        "time": "2020/2/28",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于加强对各单位保洁、保安、物业、食堂、维修维护等后勤物业工作人员防控新冠肺炎疫情工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200228_1670352.html",
+        "time": "2020/2/27",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于妥善应对新冠肺炎疫情落实住房公积金阶段性支持政策的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200227_1670059.html",
+        "time": "2020/2/27",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "北京市商务局关于进一步做好防止超市人员聚集工作的紧急通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200226_1669639.html",
+        "time": "2020/2/26",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于切实做好新冠肺炎聚集性疫情防控工作的紧急通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200226_1669647.html",
+        "time": "2020/2/26",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于依法科学精准做好新冠肺炎疫情防控工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200226_1669651.html",
+        "time": "2020/2/25",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于全面禁止非法野生动物交易、革除滥食野生动物陋习、切实保障人民群众生命健康安全的决定",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200225_1668407.html",
+        "time": "2020/2/24",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "商务部关于在做好防疫工作的前提下推动商务领域企业有序复工复产的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200224_1667905.html",
+        "time": "2020/2/24",
+        "location": "国务院",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于进一步明确在商务楼宇内办公单位防疫要求的通告",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200224_1667875.html",
+        "time": "2020/2/24",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "丰台区关于应对新冠肺炎疫情支持企业发展的若干措施(暂行)",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200223_1666461.html",
+        "time": "2020/2/23",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于阶段性降低非居民用气成本支持企业复工复产的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200222_1666362.html",
+        "time": "2020/2/22",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "国家发展和改革委员会关于阶段性降低企业用电成本支持企业复工复产的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200222_1666365.html",
+        "time": "2020/2/22",
+        "location": "国务院",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "企事业单位复工复产疫情防控措施指南",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200222_1666359.html",
+        "time": "2020/2/22",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "北京市关于促进北斗技术创新和产业发展的实施方案(2020年-2022年)",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200224_1667898.html",
+        "time": "2020/2/22",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于切实做好教育系统疫情防控经费保障及学生资助工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200222_1666250.html",
+        "time": "2020/2/22",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于加强金融支持文化产业健康发展的若干措施",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200222_1666243.html",
+        "time": "2020/2/22",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
     {
         "title": "关于阶段性减免企业社会保险费的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200221_1666156.html",
-        "time": "2020-02-21",
+        "time": "2020/2/21",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "新型冠状病毒肺炎疫情防控情况下稳定商务发展有关措施",
+        "title": "关于阶段性减征职工基本医疗保险费的指导意见",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200224_1667348.html",
+        "time": "2020/2/21",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于新型冠状病毒肺炎疫情防控情况下稳定商务发展有关措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200221_1665877.html",
-        "time": "2020-02-21",
+        "time": "2020/2/21",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "北京市规划和自然资源委员会关于做好疫情期间测绘业务工作的通知",
+        "title": "关于做好疫情期间测绘业务工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200221_1663525.html",
-        "time": "2020-02-21",
+        "time": "2020/2/21",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于做好新型冠状病毒肺炎疫情防控期间稳定劳动关系支持企业复工复产的实施意见",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200229_1672935.html",
+        "time": "2020/2/19",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于加强施工现场办公区疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1662759.html",
-        "time": "2020-02-19",
+        "time": "2020/2/19",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于应对新冠肺炎疫情影响促进文化企业健康发展的若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200219_1662284.html",
-        "time": "2020-02-19",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于给予市属国企参与新型冠状病毒肺炎疫情防控工作资金支持有关事项的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200218_1654103.html",
-        "time": "2020-02-18",
+        "time": "2020/2/19",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步做好疫情防控期间人力资源服务行业相关工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663048.html",
-        "time": "2020-02-18",
+        "time": "2020/2/18",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步强化新型冠状病毒感染的肺炎预防控制期间野生动物管理工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1662737.html",
-        "time": "2020-02-17",
+        "time": "2020/2/17",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好新型冠状病毒感染的肺炎疫情医疗保障工作的补充通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1662740.html",
-        "time": "2020-02-17",
+        "time": "2020/2/17",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "关于新型冠状病毒肺炎疫情防控服务管理工作的指导意见",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200217_1645695.html",
-        "time": "2020-02-17",
+        "title": "西城区促防疫稳经济保障中小微企业健康发展若干措施",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200227_1670113.html",
+        "time": "2020/2/17",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "新型冠状病毒肺炎疫情防控期间养老机构老年人就医指南",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200218_1647579.html",
-        "time": "2020-02-17",
+        "time": "2020/2/17",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于加强疫情期间医疗服务管理 满足群众基本就医需求的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200218_1647569.html",
-        "time": "2020-02-17",
+        "time": "2020/2/17",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "市场监管总局  国家药监局  国家知识产权局支持复工复产十条",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200216_1632315.html",
-        "time": "2020-02-16",
+        "time": "2020/2/16",
         "location": "国务院",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于加强疫情防控期间施工现场返京劳务人员管理的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1662751.html",
-        "time": "2020-02-15",
-        "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步发挥新冠肺炎防控工作专项资金保障作用的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1662475.html",
-        "time": "2020-02-15",
+        "time": "2020/2/15",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "新型冠状病毒肺炎流行期间商场和超市卫生防护指南",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200218_1647596.html",
-        "time": "2020-02-15",
+        "time": "2020/2/15",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于强化疫情防控重点保障企业资金支持的紧急通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200215_1632266.html",
-        "time": "2020-02-14",
+        "time": "2020/2/14",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于加强金融服务支持做好新型冠状病毒感染肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200215_1632272.html",
-        "time": "2020-02-13",
+        "time": "2020/2/13",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于对《关于因防控疫情推迟开学企业职工看护未成年子女期间工资待遇问题的通知》有关问题说明的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200213_1630024.html",
-        "time": "2020-02-13",
+        "time": "2020/2/13",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于落实进一步支持打好新型冠状病毒感染的肺炎疫情防控阻击战及应对疫情影响促进中小微企业持续健康发展的若干措施的实施细则",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200215_1632203.html",
-        "time": "2020-02-13",
+        "time": "2020/2/13",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "北京市污染防治攻坚战2020年行动计划",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200213_1629687.html",
+        "time": "2020/2/13",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于压实“菜篮子”市长负责制做好农产品稳产保供工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200214_1630370.html",
-        "time": "2020-02-12",
+        "time": "2020/2/12",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "关于积极应对疫情创新做好招投标工作保障经济平稳运行的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1629209.html",
-        "time": "2020-02-12",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "转发国家发展改革委办公厅关于积极应对疫情创新做好招投标工作保障经济平稳运行的通知",
+        "title": "北京市发展和改革委员会转发国家发展改革委办公厅关于积极应对疫情创新做好招投标工作保障经济平稳运行文件的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1629210.html",
-        "time": "2020-02-12",
+        "time": "2020/2/12",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于北京安全生产责任保险支持参保企业应对新型冠状病毒感染的肺炎疫情的若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1629068.html",
-        "time": "2020-02-12",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于做好违法群租房整治中疫情防控工作的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1662764.html",
-        "time": "2020-02-12",
+        "time": "2020/2/12",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "新冠肺炎流行期间办公场所和公共场所空调通风系统运行管理指南",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1628923.html",
-        "time": "2020-02-12",
+        "time": "2020/2/12",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于中小学延期开学期间“停课不停学”有关工作安排的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200214_1630420.html",
-        "time": "2020-02-12",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于切实简化疫情防控应急运输车辆通行证办理流程及落实对应急运输保障人员不实行隔离措施的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200214_1630388.html",
-        "time": "2020-02-12",
+        "time": "2020/2/12",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步做好春节后农民工返城服务保障工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1628262.html",
-        "time": "2020-02-12",
+        "time": "2020/2/12",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于对新型冠状病毒感染肺炎疫情防控用医疗机构制剂实施应急审批的公告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1628165.html",
-        "time": "2020-02-11",
+        "time": "2020/2/11",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于改善一线医务人员工作条件切实关心医务人员身心健康若干措施的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1628154.html",
-        "time": "2020-02-11",
+        "time": "2020/2/11",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步加强商务楼宇、商场和餐馆疫情防控工作的通告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1628149.html",
-        "time": "2020-02-11",
+        "time": "2020/2/11",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "本区落实北京市促防疫稳增长政策加大力度支持企业稳定发展若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200216_1632322.html",
-        "time": "2020-02-11",
+        "time": "2020/2/11",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步加强市管企业复工复产后公共场所疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1628134.html",
-        "time": "2020-02-11",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于印发《应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施》落实细则的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627800.html",
-        "time": "2020-02-11",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于向受疫情影响严重的中小微企业发服务券的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200219_1658424.html",
-        "time": "2020-02-11",
+        "time": "2020/2/11",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "顺义区进一步打好疫情防控阻击战支持企业“控疫情、稳增长”的若干措施的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627664.html",
-        "time": "2020-02-11",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市疫情防控重点保障企业贷款财政贴息申请工作流程",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627579.html",
-        "time": "2020-02-11",
+        "time": "2020/2/11",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于依法惩治妨害新型冠状病毒感染肺炎疫情防控违法犯罪的意见",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627613.html",
-        "time": "2020-02-10",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于疫情期间土地交易市场相关防控措施的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200213_1630174.html",
-        "time": "2020-02-10",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好新型冠状病毒肺炎疫情期间血液安全供应保障工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200210_1627474.html",
-        "time": "2020-02-10",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于切实做好学校疫情防控经费保障工作的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627602.html",
-        "time": "2020-02-10",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于支持企业应对新型冠状病毒感染的肺炎疫情稳定发展的若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627621.html",
-        "time": "2020-02-10",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "关于简化公路养护工程开工条件的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200210_1627436.html",
-        "time": "2020-02-10",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市广播电视局贯彻落实京政办发〔2020〕5号和7号文的实施细则",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200213_1629717.html",
-        "time": "2020-02-10",
+        "title": "关于进一步加强疫情防控期间群体性聚餐管控的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200224_1666947.html",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于新型冠状病毒感染的肺炎疫情防控期间人防工程使用管理相关工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627904.html",
-        "time": "2020-02-10",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市水务局落实《应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施》实施细则",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663064.html",
-        "time": "2020-02-10",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "应对新型冠状病毒肺炎疫情工作领导小组办公室关于在疫情防控期间有针对性地做好教师工作若干事项的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200215_1632195.html",
-        "time": "2020-02-10",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "关于新型冠状病毒感染肺炎疫情期间停征部分中小微企业污水处理费的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627802.html",
-        "time": "2020-02-10",
+        "title": "应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663064.html",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步加强社区(村)疫情防控工作的通告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200210_1627106.html",
-        "time": "2020-02-10",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于加强对商务楼宇、商场和餐馆新型冠状病毒肺炎疫情防控工作检查执法有关事项的决定",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200210_1627104.html",
-        "time": "2020-02-10",
+        "time": "2020/2/10",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于加强疫情防控做好建设工程复工协调调度的工作方案",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200209_1627058.html",
-        "time": "2020-02-09",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于进一步加强疫情防控保障建设工程安全有序复工的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1662775.html",
-        "time": "2020-02-09",
+        "time": "2020/2/9",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于应对新型冠状病毒肺炎疫情帮助中小企业复工复产共渡难关有关工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200210_1627120.html",
-        "time": "2020-02-09",
+        "time": "2020/2/9",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于进一步加强疫情防控保障建设工程安全有序复工的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1662775.html",
+        "time": "2020/2/9",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "国家卫生健康委员会关于加强新型冠状病毒肺炎疫情防控期间孕产妇疾病救治与安全助产工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626848.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "国务院",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市经济和信息化局关于贯彻落实《北京市人民政府办公厅关于应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施》的具体措施",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626847.html",
-        "time": "2020-02-08",
-        "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于疫情防控期间免收农民工返岗包车公路通行费的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1628296.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "国家卫生健康委员会关于新型冠状病毒肺炎暂命名事宜的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626827.html",
-        "time": "2020-02-08",
-        "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "新型冠状病毒肺炎应急救治设施设计导则(试行)",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626830.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于支持中小企业抗疫情云办公稳发展的若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626797.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "国家税务总局北京市税务局关于支持疫情防控的相关措施说明",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626744.html",
-        "time": "2020-02-08",
-        "location": "国务院",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市体育局关于申请受疫情影响滑冰滑雪场所水电补贴的征集公告",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626742.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市财政局关于优化融资担保服务实施流程细则",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626741.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于疫情防控期间调整上市辅导工作方式的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626735.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的政策说明",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626734.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于应对新型冠状病毒感染的肺炎疫情影响支持中小微企业持续健康发展的政策说明",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626731.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市地方金融监督管理局关于《北京市人民政府办公厅关于应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施》有关事项办理流程",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626726.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于新型冠状病毒感染的肺炎疫情防控应急物资及人员运输车辆跨省通行证件办理信息公示",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626724.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市卫生健康委员会新型冠状病毒感染的肺炎公众一般性防控指引",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626720.html",
-        "time": "2020-02-08",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "北京市司法局关于贯彻落实《北京市人民政府办公厅关于应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施》的通告",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626719.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "国家卫生健康委员会 国家中医药管理局关于印发新型冠状病毒肺炎诊疗方案(试行第五版 修正版)的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200209_1626944.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于落实京政办发〔2020〕7号文减免中小微企业房租的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626693.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于新型冠状病毒感染的肺炎疫情期间停征本市中小微企业城市道路占道费的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626686.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于新型冠状病毒感染肺炎疫情防控期间加大政府采购支持中小微企业力度的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626666.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于新型冠状病毒感染的肺炎疫情防控期间对我市中小微企业停征特种设备检验检测费的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626652.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于新型冠状病毒感染的肺炎疫情防控期间对中小微企业停征占道费的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626647.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于新型冠状病毒感染的肺炎疫情防控期间对我市中小微企业停征污水处理费(非居民)的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626640.html",
-        "time": "2020-02-08",
+        "time": "2020/2/8",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "应对新型冠状病毒感染的肺炎疫情影响对中小微企业停征特种设备检验费的实施方案",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626816.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于全力做好春运返程高峰运输服务保障工作的紧急通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1628281.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于依法防控新型冠状病毒感染肺炎疫情 坚决打赢疫情防控阻击战的决定",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626510.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于全力做好一线医务人员及其家属保障工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626508.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于暂退部分旅游服务质量保证金支持旅行社应对经营困难的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626707.html",
-        "time": "2020-02-07",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于打赢疫情防控阻击战 强化疫情防控重点保障企业资金支持的紧急通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626602.html",
-        "time": "2020-02-07",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于做好新型冠状病毒感染肺炎疫情防控期间稳定劳动关系支持企业复工复产的意见",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1628271.html",
-        "time": "2020-02-07",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "新型冠状病毒肺炎疫情防控期间心理援助热线工作指南",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626607.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "北京市广播电视局关于应对新型冠状病毒感染的肺炎疫情支持网络视听企业保经营稳发展的若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626725.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "关于打赢疫情防控阻击战强化疫情防控重点保障企业资金支持的紧急通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627582.html",
-        "time": "2020-02-07",
+        "title": "关于做好新型冠状病毒感染肺炎疫情防控期间稳定劳动关系支持企业复工复产的意见",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200212_1628271.html",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "关于新型冠状病毒感染的肺炎疫情期间停征部分中小微企业污水处理费的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663059.html",
-        "time": "2020-02-07",
+        "title": "关于打赢疫情防控阻击战 强化疫情防控重点保障企业资金支持的紧急通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626602.html",
+        "time": "2020/2/7",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "新型冠状病毒肺炎疫情防控期间心理援助热线工作指南",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626607.html",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于在疫情防控中做好互联网诊疗咨询服务工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626610.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
-        "title": "北京市医疗保障局关于防控新型冠状病毒感染的肺炎疫情期间全面优化医疗保障经办服务的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626851.html",
-        "time": "2020-02-07",
-        "location": "国务院",
+        "title": "关于打赢疫情防控阻击战强化疫情防控重点保障企业资金支持的紧急通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200211_1627582.html",
+        "time": "2020/2/7",
+        "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于应对疫情影响支持中小微企业稳定就业岗位有关问题的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626615.html",
-        "time": "2020-02-07",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于支持科技“战疫”促进企业持续健康发展有关工作的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663098.html",
-        "time": "2020-02-07",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于支持科技“战疫”、促进企业持续健康发展有关工作的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626617.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好新型冠状病毒感染肺炎疫情防控财政资金和捐赠款物审计监督工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626623.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "北京市医疗保障局关于防控新型冠状病毒感染的肺炎疫情期间全面优化医疗保障经办服务的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626851.html",
+        "time": "2020/2/7",
+        "location": "国务院",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于新型冠状病毒感染的肺炎疫情期间停征部分中小微企业污水处理费的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663059.html",
+        "time": "2020/2/7",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于支持科技“战疫”促进企业持续健康发展有关工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663098.html",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "北京市经济和信息化局关于落实《北京市人民政府办公厅关于应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施》相关事项办理流程",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626308.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "财政部 税务总局关于支持新型冠状病毒感染的肺炎疫情防控有关税收政策的公告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626115.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "财政部 税务总局关于支持新型冠状病毒感染的肺炎疫情防控有关捐赠税收政策的公告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626108.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "财政部 税务总局关于支持新型冠状病毒感染的肺炎疫情防控有关个人所得税政策的公告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626106.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "财政部 国家发展和改革委员会关于新型冠状病毒感染的肺炎疫情防控期间免征部分行政事业性收费和政府性基金的公告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626096.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于切实为基层减负全力做好新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626081.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好疫情防控期间有关就业工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200207_1626061.html",
-        "time": "2020-02-07",
+        "time": "2020/2/7",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好疫情防控期间生活物资对接调运保供有关工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200210_1627111.html",
-        "time": "2020-02-06",
+        "time": "2020/2/6",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于应对新型冠状病毒感染肺炎疫情影响停征部分行政事业性收费的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200206_1625837.html",
-        "time": "2020-02-06",
+        "time": "2020/2/6",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "零售、餐饮企业在新型冠状病毒流行期间经营服务防控指南",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663132.html",
-        "time": "2020-02-06",
+        "time": "2020/2/6",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "国家食品药品监督管理总局关于严厉打击制售假劣药品医疗器械违法行为 切实保障新型冠状病毒感染肺炎疫情防控药品医疗器械安全的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200206_1625504.html",
-        "time": "2020-02-06",
+        "time": "2020/2/6",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于帮助外贸企业应对疫情克服困难减少损失的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200206_1625501.html",
-        "time": "2020-02-06",
+        "time": "2020/2/6",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200206_1625493.html",
-        "time": "2020-02-05",
+        "time": "2020/2/5",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "国家卫生健康委员会办公厅关于加强信息化支撑新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200205_1625272.html",
-        "time": "2020-02-05",
+        "time": "2020/2/5",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "国家卫生健康委员会关于印发不同人群预防新型冠状病毒感染口罩选择与使用技术指引的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200205_1625009.html",
-        "time": "2020-02-05",
+        "time": "2020/2/5",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "国家卫生健康委员会办公厅关于印发新型冠状病毒感染的肺炎防控中居家隔离医学观察感染防控指引(试行)的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200205_1624999.html",
-        "time": "2020-02-05",
+        "time": "2020/2/5",
+        "location": "国务院",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "人力资源社会保障部办公厅关于公布失业保险金网上申领平台的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200205_1624896.html",
+        "time": "2020/2/5",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于落实进一步支持打好新型冠状病毒感染的肺炎疫情防控阻击战若干措施的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200206_1625502.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "石景山区关于共同应对新型冠状病毒感染的肺炎疫情支持企业发展的若干措施(暂行)",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200206_1625505.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于优化医疗保障经办服务 推动新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624708.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "农业农村部办公厅 交通运输部办公厅 公安部办公厅关于确保“菜篮子”产品和农业生产资料正常流通秩序的紧急通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624707.html",
+        "time": "2020/2/4",
+        "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "财政部 海关总署 税务总局关于防控新型冠状病毒感染的肺炎疫情进口物资免税政策的公告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624701.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "人力资源社会保障部办公厅关于切实做好新型冠状病毒感染的肺炎疫情防控期间事业单位人事管理工作有关问题的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624703.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "国务院",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于印发新型冠状病毒感染不同风险人群防护指南和预防新型冠状病毒感染的肺炎口罩使用指南的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624647.html",
+        "time": "2020/2/4",
+        "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "殡葬服务机构新型冠状病毒感染肺炎患者遗体处置及疫情防控工作指引(试行)",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624673.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "国家卫生健康委员会办公厅关于部分消毒剂在新型冠状病毒感染的肺炎疫情防控期间紧急上市的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624692.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于配合做好疫情防控工作加强中央国家机关住房公积金服务保障的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624572.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "商务部办公厅关于进一步强化生活必需品市场供应保障工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624561.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于统筹做好春节后错峰返程疫情防控和交通运输保障工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624454.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "新型冠状病毒感染的肺炎疑似病例轻症患者首诊隔离点观察工作方案",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624395.html",
-        "time": "2020-02-04",
+        "time": "2020/2/4",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "北京经济技术开发区关于支持企业控疫情稳增长若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200206_1625590.html",
-        "time": "2020-02-03",
+        "time": "2020/2/3",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步支持打好新型冠状病毒感染的肺炎疫情防控阻击战若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200203_1622987.html",
-        "time": "2020-02-03",
+        "time": "2020/2/3",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好儿童和孕产妇新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200202_1622787.html",
-        "time": "2020-02-02",
+        "time": "2020/2/2",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于疫情防控期间住房公积金业务办理相关事项的通告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200202_1622775.html",
-        "time": "2020-02-02",
+        "time": "2020/2/2",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步做好基层医疗卫生机构防控新型冠状病毒感染的肺炎疫情工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200202_1622658.html",
-        "time": "2020-02-02",
+        "time": "2020/2/2",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于加强新型冠状病毒肺炎科技攻关促进医药健康创新发展的若干措施",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200203_1622866.html",
-        "time": "2020-02-02",
+        "time": "2020/2/2",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于切实做好新型冠状病毒感染肺炎疫情防控期间我市社会保险经办工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200202_1622616.html",
-        "time": "2020-02-02",
+        "time": "2020/2/2",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于新型冠状病毒疫情防控期间延长我市社会保险缴费工作的通告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200202_1622614.html",
-        "time": "2020-02-02",
+        "time": "2020/2/2",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于设立应对疫情心理援助热线的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200203_1622859.html",
-        "time": "2020-02-02",
+        "time": "2020/2/2",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于物业企业进一步加强新型冠状病毒感染肺炎疫情防控期间住宅区出入管理的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200201_1622573.html",
-        "time": "2020-02-01",
+        "time": "2020/2/1",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于切实做好疫情防控期间医疗保险和生育保险经办工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626739.html",
-        "time": "2020-02-01",
+        "time": "2020/2/1",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "新型冠状病毒感染的肺炎患者遗体处置工作指引(试行)",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200203_1622870.html",
-        "time": "2020-02-01",
+        "time": "2020/2/1",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好疫情防控期间本市高校毕业生就业工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200201_1622137.html",
-        "time": "2020-02-01",
+        "time": "2020/2/1",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "公共场所新型冠状病毒感染的肺炎卫生防护指南",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1622075.html",
-        "time": "2020-01-31",
+        "time": "2020/1/31",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步做好疫情防控期间本市人力资源和社会保障相关工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1622074.html",
-        "time": "2020-01-31",
+        "time": "2020/1/31",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于在新型冠状病毒感染的肺炎疫情防控期间本市企业灵活安排工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1622070.html",
-        "time": "2020-01-31",
+        "time": "2020/1/31",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步做好新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624631.html",
-        "time": "2020-01-31",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于因防控疫情推迟开学企业职工看护未成年子女期间工资待遇问题的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200213_1630022.html",
-        "time": "2020-01-31",
+        "time": "2020/1/31",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好新型冠状病毒感染肺炎疫情防控情况下金融服务保障工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200208_1626745.html",
-        "time": "2020-01-31",
+        "time": "2020/1/31",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于因防控疫情推迟开学企业职工看护未成年子女期间工资待遇问题的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200213_1630022.html",
+        "time": "2020/1/31",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步明确责任加强新型冠状病毒感染的肺炎预防控制工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1621864.html",
-        "time": "2020-01-31",
+        "time": "2020/1/31",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "北京市住房和城乡建设委员会关于加强本市租赁中介行业疫情防控的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1621982.html",
-        "time": "2020-01-31",
+        "time": "2020/1/31",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步动员城乡社区组织开展新型冠状病毒感染的肺炎疫情防控工作的紧急通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200130_1621708.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于切实做好新型冠状病毒感染的肺炎疫情防控期间社会保险经办工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1621821.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步做好农村地区新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1621826.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于组织做好疫情防控重点物资生产企业复工复产和调度安排工作的紧急通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1621827.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于物业服务企业做好新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1622066.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于严明纪律确保新型冠状病毒感染的肺炎疫情防控工作顺利进行的紧急通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200130_1621671.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于印发公共交通工具消毒操作技术指南的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200130_1621612.html",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "施工现场新型冠状病毒感染的肺炎疫情防控工作管理规定",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200130_1621615.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于加强党的领导、为打赢疫情防控阻击战提供坚强政治保证的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200130_1621607.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "北京市新型冠状病毒感染的肺炎疫情社区(村)防控工作方案(试行)",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200130_1621608.html",
-        "time": "2020-01-30",
+        "time": "2020/1/30",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于施工现场新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200130_1621614.html",
-        "time": "2020-01-29",
+        "time": "2020/1/29",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于进一步做好新型冠状病毒感染肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200129_1621499.html",
-        "time": "2020-01-29",
+        "time": "2020/1/29",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于做好老年人新型冠状病毒感染肺炎疫情防控工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200128_1621485.html",
+        "time": "2020/1/28",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "中共中央关于加强党的领导、为打赢疫情防控阻击战提供坚强政治保证的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200220_1663122.html",
-        "time": "2020-01-28",
+        "time": "2020/1/28",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于印发近期防控新型冠状病毒感染的肺炎工作方案的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200129_1621500.html",
+        "time": "2020/1/28",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好新型冠状病毒感染的肺炎疫情防控工作中表现突出个人和集体即时性表彰的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200131_1621830.html",
-        "time": "2020-01-28",
+        "time": "2020/1/28",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于延长2020年春节假期的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200128_1621470.html",
-        "time": "2020-01-28",
+        "time": "2020/1/28",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "改革完善医疗卫生行业综合监管制度的实施方案",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200201_1622164.html",
+        "time": "2020/1/27",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于落实“四方责任”进一步加强重点人群、场所和单位新型冠状病毒感染的肺炎疫情防控工作的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200128_1621466.html",
-        "time": "2020-01-27",
-        "location": "北京",
-        "source": "北京市人民政府网"
-    },
-    {
-        "title": "关于做好全市养老机构封闭式管理的通知",
-        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200127_1621406.html",
-        "time": "2020-01-27",
+        "time": "2020/1/27",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于妥善处理新型冠状病毒感染的肺炎疫情防控期间劳动关系问题的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200126_1621372.html",
-        "time": "2020-01-26",
+        "time": "2020/1/26",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好进出武汉交通运输工具管控全力做好疫情防控工作的紧急通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200126_1621364.html",
-        "time": "2020-01-26",
+        "time": "2020/1/26",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于坚决维护防疫用品市场价格秩序的公告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200126_1621361.html",
-        "time": "2020-01-26",
+        "time": "2020/1/26",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于严格预防通过交通工具传播新型冠状病毒感染的肺炎的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200130_1621703.html",
+        "time": "2020/1/24",
+        "location": "北京",
+        "source": "北京市人民政府网"
+    },
+    {
+        "title": "关于加强新型冠状病毒感染的肺炎疫情社区防控工作的通知",
+        "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200128_1621467.html",
+        "time": "2020/1/24",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "海关总署 国家卫生健康委员会关于防控新型冠状病毒感染的肺炎的公告",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200126_1621362.html",
-        "time": "2020-01-24",
+        "time": "2020/1/24",
         "location": "国务院",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好疫情防控期间维护劳动关系稳定有关问题的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200124_1621272.html",
-        "time": "2020-01-23",
+        "time": "2020/1/23",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于做好新型冠状病毒感染的肺炎疫情医疗保障的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202001/t20200126_1621370.html",
-        "time": "2020-01-23",
+        "time": "2020/1/23",
         "location": "北京",
         "source": "北京市人民政府网"
     },
     {
         "title": "关于因履行工作职责感染新型冠状病毒肺炎的医护及相关工作人员有关保障问题的通知",
         "link": "http://www.beijing.gov.cn/zhengce/zhengcefagui/202002/t20200204_1624656.html",
-        "time": "2020-01-23",
+        "time": "2020/1/23",
         "location": "北京",
         "source": "北京市人民政府网"
     }
