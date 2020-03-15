@@ -4,6 +4,7 @@ import echarts from 'echarts/lib/echarts'
 
 import 'echarts/lib/chart/map'
 import 'echarts/lib/component/visualMap'
+import 'echarts/lib/component/tooltip'
 
 function Map ({ province, data, onClick }) {
   const [loading, setLoading] = useState(true)
@@ -87,7 +88,10 @@ function Map ({ province, data, onClick }) {
           scale: 2.5,
           period: 4
         }
-      }]
+      }],
+      tooltip: {
+        trigger: 'item',
+      }
     }
   }
   return (

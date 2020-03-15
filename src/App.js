@@ -1,10 +1,9 @@
 import React, { useState, Suspense, useEffect  } from 'react'
-import ReactDOM from 'react-dom';
 import keyBy from 'lodash.keyby'
 import dayjs from 'dayjs'
 import 'dayjs/locale/zh-cn'
 import relativeTime from 'dayjs/plugin/relativeTime'
-import { Carousel, WingBlank, List, Card, WhiteSpace } from 'antd-mobile';
+import { Carousel, WingBlank, List, Card, WhiteSpace, Tabs, Button} from 'antd-mobile';
 import all from './data/overall'
 import provinces from './data/area'
 import countries from './data/countries'
@@ -24,7 +23,8 @@ import 'antd-mobile/lib/wing-blank/style/css';        // 加载 CSS
 import 'antd-mobile/lib/list/style/css';        // 加载 CSS
 import 'antd-mobile/lib/card/style/css';        // 加载 CSS
 import 'antd-mobile/lib/white-space/style/css';        // 加载 CSS
-
+import 'antd-mobile/lib/tabs/style/css';
+import 'antd-mobile/lib/button/style/css';
 // import { Fab, Action } from 'react-tiny-fab';
 // import 'react-tiny-fab/dist/styles.css';
 // import React from 'react'
@@ -35,7 +35,6 @@ import Person from './person'
 import './App.css'
 import axios from 'axios'
 import TotalTag from "./TotalTag";
-import nameMap from './data/nameMap'
 // import { green, red } from '_ansi-colors@3.2.4@ansi-colors'
 
 dayjs.extend(relativeTime)
@@ -53,6 +52,8 @@ const Brief = Item.Brief;
 const fetcher = (url) => axios(url).then(data => {
   return data.data.data
 })
+
+const countryMax = 34;
 
 function New ({ title, summary, sourceUrl, pubDate, pubDateStr }) {
   return (
@@ -393,6 +394,7 @@ function Area ({ area, onChange }) {
 }
 
 function WorldArea ({ area, onChange }) {
+  const [viewall,setviewall] = useState(false)
   const renderArea = () => {
     return area.map(x => (
       <div className="province" key={x.provinceName} onClick={() => {}}>
@@ -402,7 +404,22 @@ function WorldArea ({ area, onChange }) {
         <div className="death">{ x.deadCount }</div>
         <div className="cured">{ x.curedCount }</div>
       </div>
-    ))
+    )).slice(0,(viewall==0) ? countryMax : 100)
+  }
+  const viewAllButton = () => {
+    if (viewall) {
+      return (
+        <Button onClick={() => {setviewall(false)}} size='small'>
+          点击收起
+        </Button>
+      )
+    }else {
+      return (
+        <Button onClick={() => {setviewall(true)}} size='small'>
+          点击查看全部国家
+        </Button>
+      )
+    }
   }
 
   return (
@@ -414,6 +431,7 @@ function WorldArea ({ area, onChange }) {
         <div className="cured">治愈</div>
       </div>
       { renderArea() }
+      { viewAllButton() }
     </>
   )
 }
@@ -479,9 +497,9 @@ function App () {
   }))
 
   const Worlddata = countries.map(p => ({
-    name: nameMap[p.provinceName],
+    name: p.provinceName,
     value: p.confirmedCount
-  })).concat([{name: nameMap['中国'],
+  })).concat([{name: '中国',
             value: all.confirmedCount
            }])
   
@@ -494,6 +512,11 @@ function App () {
             'curedCount': all.curedCount,
             'sort': 0
   }]).concat(countries)
+
+  const tabs = [
+    { title: '全国疫情地图' },
+    { title: '世界疫情地图' },
+  ];
 
 
   return (
@@ -533,57 +556,59 @@ function App () {
                      </div>
         {/* </Carousel> */}
       {/* </WingBlank> */}
-      
-      <div className="card" id="Map">
-        <h2>疫情地图 { province ? `· ${province.name}` : "(点击省市查看详情)" }
-        {
-          province ? <small
-            onClick={() => setProvince(null)}
-          >返回全国</small> : null
-        }
-        </h2>
-        {/* <h3>点击省市查看详情</h3> */}
-        <Stat { ...overall } name={province && province.name} modifyTime={all.modifyTime} />
-        <Suspense fallback={<div className="loading">地图正在加载中...</div>}>
-          <Map province={province} data={data} onClick={name => {
-            const p = provincesByName[name]
-            if (p) {
-              setProvince(p)
-            }
-          }} />
-          {/*
-            province ? false :
-              <div className="tip">
-                在地图中点击省份可跳转到相应省份的疫情地图，并查看该省相关的实时动态
-              </div>
-          */ }
-        </Suspense>
-        <Area area={area} onChange={setProvince} />
+      <div className='card' id='MapTab'>
+        <WhiteSpace />
+          <Tabs tabs={tabs} initialPage={0} animated={false} useOnPan={false} style="z-index:-100,position:absolute" >
+            <div id="Map">
+              <h2>疫情地图 { province ? `· ${province.name}` : "(点击省市查看详情)" }
+                {
+                  province ? <small
+                   onClick={() => setProvince(null)}
+                  >返回全国</small> : null
+                }  
+              </h2>
+              {/* <h3>点击省市查看详情</h3> */}
+              <Stat { ...overall } name={province && province.name} modifyTime={all.modifyTime} />
+              <Suspense fallback={<div className="loading">地图正在加载中...</div>}>
+                <Map province={province} data={data} onClick={name => {
+                  const p = provincesByName[name]
+                  if (p) {
+                    setProvince(p)
+                  }
+                }} />
+                {/*
+                  province ? false :
+                    <div className="tip">
+                      在地图中点击省份可跳转到相应省份的疫情地图，并查看该省相关的实时动态
+                    </div>
+                */ }
+              </Suspense>
+              <Area area={area} onChange={setProvince} />
+            </div>
+            <div id="WorldMap">
+              <h2>世界疫情地图 { country ? `· ${country.name}` : "" }
+              {
+                country ? <small
+                  onClick={() => _setCountry(null)}
+                >返回世界地图</small> : null
+              }
+              </h2>
+              {/* <h3>点击省市查看详情</h3> */}
+              <WorldStat { ...all.foreignStatistics } name={'世界'} modifyTime={all.modifyTime} />
+              <Suspense fallback={<div className="loading">地图正在加载中...</div>}>
+                <WorldMap province={country} data={Worlddata} onClick= {(name) => {}}/>
+                {/*
+                  province ? false :
+                    <div className="tip">
+                      在地图中点击省份可跳转到相应省份的疫情地图，并查看该省相关的实时动态
+                    </div>
+                */ }
+              </Suspense>
+              <WorldArea area={Worldarea} onChange={_setCountry} />
+            </div>
+          </Tabs>
+        <WhiteSpace />
       </div>
-
-      <div className="card" id="WorldMap">
-        <h2>世界疫情地图 { country ? `· ${country.name}` : "" }
-        {
-          province ? <small
-            onClick={() => _setCountry(null)}
-          >返回世界地图</small> : null
-        }
-        </h2>
-        {/* <h3>点击省市查看详情</h3> */}
-        <WorldStat { ...all.foreignStatistics } name={'世界'} modifyTime={all.modifyTime} />
-        <Suspense fallback={<div className="loading">地图正在加载中...</div>}>
-          <WorldMap province={country} data={Worlddata} onClick= {(name) => {}}/>
-          {/*
-            province ? false :
-              <div className="tip">
-                在地图中点击省份可跳转到相应省份的疫情地图，并查看该省相关的实时动态
-              </div>
-          */ }
-        </Suspense>
-        <WorldArea area={Worldarea} onChange={_setCountry} />
-      </div>
-      
-
 
       <div className="card" id="Predict">
         <h2> 疫情预测（确诊趋势）· 近期</h2>
@@ -645,7 +670,7 @@ function App () {
       </div>
       <Callback />
       <Fallback />
-      <NavFab/>
+      <NavFab style={{ "z-index":100, "position":"absolute" }}/>
     </div>
   );
 }

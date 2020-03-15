@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import ReactEcharts from 'echarts-for-react/lib/core'
 import echarts from 'echarts/lib/echarts'
+import nameMap from './data/nameMap'
 
 import 'echarts/lib/chart/map'
 import 'echarts/lib/component/visualMap'
+import 'echarts/lib/component/tooltip'
 
 function WorldMap ({ province, data, onClick }) {
   const [loading, setLoading] = useState(true)
@@ -69,6 +71,7 @@ function WorldMap ({ province, data, onClick }) {
           fontSize: 6
         },
         mapType: 'world',
+        nameMap: nameMap,
         data,
         zoom: 1.2,
         roam: false,
@@ -80,7 +83,10 @@ function WorldMap ({ province, data, onClick }) {
           scale: 2.5,
           period: 4
         }
-      }]
+      }],
+      tooltip: {
+        trigger: 'item',
+      }
     }
   }
   return (
