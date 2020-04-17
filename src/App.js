@@ -506,12 +506,7 @@ function App () {
   const area = province ? provincesByName[province.name].cities : provinces
   const overall = province ? province : all
 
-  const Worldarea = ([{'provinceName': '中国',
-            'confirmedCount': all.confirmedCount,
-            'deadCount': all.deadCount,
-            'curedCount': all.curedCount,
-            'sort': 0
-  }]).concat(countries)
+  const Worldarea = countries
 
   const tabs = [
     { title: '全国疫情地图' },
